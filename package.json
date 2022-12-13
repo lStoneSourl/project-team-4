@@ -1,15 +1,15 @@
 {
-  "name": "parcel-project-template",
+  "name": "project-team-4",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://lStoneSourl.github.io/parcel-project-template",
+  "homepage": "https://lStoneSourl.github.io/project-team-4",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /project-team-4/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lStoneSourl/parcel-project-template.git"
+    "url": "git+https://github.com/lStoneSourl/project-team-4.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",

@@ -1,1 +1,9 @@
+@import './utils/variebles';
+@import './base/fonts';
 @import './base/common';
+@import './base/global';
+@import './layout/header';
+@import './layout/footer';
+@import './components/index';
+@import './components/backdrop';
+@import './components/mobile-menu';

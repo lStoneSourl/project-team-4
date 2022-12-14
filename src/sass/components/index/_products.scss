@@ -1,0 +1,96 @@
+li {
+    list-style-type: none;
+}
+ul {
+    margin: 0px;
+    padding-left: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+p {
+    margin: 0px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    z-index: 0;
+}
+a{
+    text-decoration: none;
+    }
+    a:hover{
+    text-decoration: none;
+    }
+    a:active{
+    text-decoration: none;
+}
+.goods {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    margin: 0;
+    color: #131313;
+}
+.overlay {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #84A178;
+    background-image: url(../images/Backgroud_mobile885x1242.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/Backgroud_mobile1770x2484@2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+    background-image:
+        url(../images/Background_tablet963x1017.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/Background_tablet1926x2034@2x.jpg);
+    }
+    }
+    @media screen and (min-width: 1200px) {
+    background-image: 
+        url(../images/Backgroud_desktop1300x1350.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/Backgroud_desktop2600x2700@2x.jpg);
+    }
+}
+}
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    align-items: center;
+
+    @media screen and (min-width: 480px){
+        width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+.quality-percentages {
+    color: #131313;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.22;
+    font-style: normal;
+}
+.title-section {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+}

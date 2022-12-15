@@ -1,0 +1,76 @@
+
+.swiper {
+    display: block;
+    text-align: center;
+    width: 100vw;
+    height: 1069px;
+    background-image: url(../images/Backgroud_mobile885x1242.jpg);
+    
+}
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.gallery__images {
+    border-radius: 10%;
+}
+.gallery__big {
+    display: block;
+    width: 100vw;  
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-bottom: 80px;
+   border-radius: 6.5%;
+}
+.gallery__smail {
+    border-radius: 50%;
+}
+
+.gallery__one {
+    position: relative;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    width: 280px;
+    height: 256px;
+    background-color: #84A178;;
+    border-radius: 10px;
+}
+.gallery__text {
+    position: absolute;
+    padding: 35px 39px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 255%;
+
+
+    text-align: center;
+
+    color: #FCFCFC;
+
+    
+}
+.gallery__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+
+
+    text-align: center;
+
+    color: #131313;
+}

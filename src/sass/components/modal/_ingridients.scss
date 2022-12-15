@@ -1,0 +1,244 @@
+/* Стили для подложки */
+.overlay {
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, .5); */
+    z-index: 20;
+    transition: .3s all;
+}
+
+/* Стили для модальных окон */
+
+.modal {
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+
+    /*  Установаем ширину окна  */
+    width: 100%;
+    min-width: 280px;
+
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    /* Должен быть выше чем у подложки*/
+    /*  Побочные стили   */
+    text-align: center;
+    padding: 28px 20px;
+    border: 2px solid #F8D24E;
+
+    @media screen and (min-width: 568px) {
+        max-width: 568px;
+    
+    }
+
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    fill: #131313;
+    cursor: pointer;
+}
+
+/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+
+.modal__title {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.circle__img {
+    position: relative;
+    width: 132px;
+    height: 139px;
+    margin-bottom: 22px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+
+}
+
+.picture__chololate {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: bottom 10px right 20px;
+}
+
+.components {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.components__list {
+    display: flex;
+}
+
+.components__weight {
+    width: 53px;
+    height: 72px;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+}
+
+.components__circle {
+    margin-bottom: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #9CBE8F;
+    border: 2px solid #9CBE8F;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+
+.components__number {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: calc(28 / 10);
+    color: #131313;
+}
+
+.components__desc {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(12 / 10);
+}
+
+.title__ingredients {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    color: #131313;
+}
+
+.ingredients {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingredients__list {
+    text-align: start;
+}
+
+.ingredients__list--title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color: #131313;
+}
+
+.ingredients__number {
+    text-align: end
+}
+
+.ingredients__weight--number {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color: #131313;
+}
+
+.form__group {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.form__field {
+    display: block;
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 10.43px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 10.43px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #131313;
+}
+
+.form__coment {
+    position: relative;
+}
+
+.form__textarea {
+    display: block;
+    width: 100%;
+    padding-top: 11px;
+    padding-left: 10.43px;
+    margin-bottom: 24px;
+
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    resize: none;
+}
+
+.form__textarea-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 11px;
+    padding-left: 10.43px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #131313;
+}

@@ -1,0 +1,19 @@
+.hero {
+    background-color: var(--backgroundColor);;
+}
+
+.hero_container {
+    max-width: 480px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.hero_title {
+    font-family: 'Seymour One';
+    color: var(--textColor);
+}
+
+.hero_links-list {
+    display: flex;
+    justify-content: center;
+}

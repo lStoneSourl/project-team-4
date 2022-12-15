@@ -1,0 +1,14 @@
+.hero {
+    background-color: var(--backgroundColor);
+    max-width: 480px;
+    margin: 0px auto;
+}
+
+.hero_title {
+    font-family: 'Seymour One';
+}
+
+.hero_links-list {
+    display: flex;
+    justify-content: center;
+}

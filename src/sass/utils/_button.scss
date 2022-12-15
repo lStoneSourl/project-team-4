@@ -1,143 +1,299 @@
 .btn__transparent {
-    position: relative;
-    max-width: 250px;
-    min-width: 120px;
-    min-height: 40px;
-    padding: 11px 26px;
+  position: relative;
+  max-width: 250px;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 11px 26px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  color: #000000;
+  // text-transform: uppercase;
   
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15 / 12);
-    color: #000000;
-    // text-transform: uppercase;
-    
-    background-color: transparent;
-    border: 2px solid var(--accentColor);
-    border-radius: 8px;
-    overflow: hidden;
-    cursor: pointer;
-  
-    transition: border-color var(--transitionDuration) var(--transitionTimingFunction);
-  
-    &:hover,
-    &:focus {
-      border-color: var( --btn-hoverColor);
-    }
-    &:focus {
-        outline: none;
-        color: var(--extrabackgroundColor);
-      }
-    &:disabled {
-        outline: none;
-        color: var(--primaryColor);
-        border-color: var(--btn-disabledColor);
-        cursor: initial;
-      }  
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-        line-height: calc(18 / 14);
-        padding: 12px 34px;
-        border-radius: 10px;
-        
-    }  
+  background-color: transparent;
+  border: 2px solid var(--accentColor);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: border-color var(--transitionDuration) var(--transitionTimingFunction);
+
+  &:hover,
+  &:focus {
+    border-color: var( --btn-hoverColor);
   }
-
-  
-
-  .btn__colored {
-    position: relative;
-    max-width: 250px;
-    min-width: 120px;
-    min-height: 40px;
-    padding: 11px 26px;
-  
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15 / 12);
-    color: #000000;
-    // text-transform: uppercase;
-    
-    background-color: var(--accentColor);
-    border: 2px solid transparent;
-    border-radius: 8px;
-    overflow: hidden;
-    cursor: pointer;
-  
-    transition: border-color var(--transitionDuration) var(--transitionTimingFunction);
-  
-    &:hover,
-    &:focus {
+  &:focus {
+      outline: none;
+      color: var(--extrabackgroundColor);
+    }
+  &:disabled {
+      outline: none;
+      color: var(--primaryColor);
+      border-color: var(--btn-disabledColor);
+      cursor: initial;
+    }  
+  @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(18 / 14);
+      padding: 12px 34px;
+      border-radius: 10px;
       
+  }  
+}
+
+
+
+.btn__colored {
+  position: relative;
+  max-width: 250px;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 11px 26px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  color: #000000;
+  // text-transform: uppercase;
+  
+  background-color: var(--accentColor);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: border-color var(--transitionDuration) var(--transitionTimingFunction);
+
+  &:hover,
+  &:focus {
+    
+    background-color: var(--btn-hoverColor);
+  }
+  &:focus {
+      outline: none;
+      background-color: var(--btn-hoverColor);
+      color: var(--extrabackgroundColor);
+    }
+  &:disabled {
+      outline: none;
+      color: var(--primaryColor);
+      border-color: var(--btn-disabledColor);
+      background-color: var(--btn-disabledColor);
+      cursor: initial;
+    }  
+  @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(18 / 14);
+      padding: 12px 34px;
+      border-radius: 10px;
+      
+  }  
+}
+
+
+.btn__off {
+  position: relative;
+  max-width: 450px;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 11px 26px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  color: var(--accentColor);
+  text-decoration: underline;
+  // text-transform: uppercase;
+  
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: border-color var(--transitionDuration) var(--transitionTimingFunction);
+
+  &:hover   {
+    
+    color: var(--btn-hoverColor);
+  }
+  &:focus {
+      outline: none;
+      color: var(--extrabackgroundColor);
+    }
+  &:disabled {
+      outline: none;   
+      color: var(--btn-disabledColor);
+      cursor: initial;
+    }  
+  @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(18 / 14);
+      padding: 12px 34px;
+      border-radius: 10px;
+      
+  }  
+}
+
+.btn__colored-arrow {
+  position: relative;
+  max-width: 250px;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 12px 40px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: #000000;
+  // text-transform: uppercase;
+  
+ 
+  border: 2px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+
+  padding-right: 50px;
+  background: url(../images/but/arrow-b.svg) no-repeat left 80% center;
+  background-color: var(--accentColor);
+
+  transition: border-color var(--transitionDuration) var(--transitionTimingFunction);
+
+  &:hover,
+  &:focus {
+    
+    background-color: var(--btn-hoverColor);
+  }
+  &:focus {
+      outline: none;
+     
+      color: var(--extrabackgroundColor);
+      background: url(../images/but/arrow-w.svg) no-repeat left 80% center;
       background-color: var(--btn-hoverColor);
     }
-    &:focus {
-        outline: none;
-        background-color: var(--btn-hoverColor);
-        color: var(--extrabackgroundColor);
-      }
-    &:disabled {
-        outline: none;
-        color: var(--primaryColor);
-        border-color: var(--btn-disabledColor);
-        background-color: var(--btn-disabledColor);
-        cursor: initial;
-      }  
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-        line-height: calc(18 / 14);
-        padding: 12px 34px;
-        border-radius: 10px;
-        
+  &:disabled {
+      outline: none;
+      color: var(--primaryColor);
+      border-color: var(--btn-disabledColor);
+      background-color: var(--btn-disabledColor);
+      cursor: initial;
     }  
+  // @media screen and (min-width: 1200px) {
+  //     font-size: 14px;
+  //     line-height: calc(18 / 14);
+  //     padding: 12px 34px;
+  //     border-radius: 10px;
+  // }  
+}
+
+.btn__transparent-arrow {
+  position: relative;
+  max-width: 250px;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 12px 55px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: #000000;
+  // text-transform: uppercase;
+  
+  background-color: transparent;
+  border: 2px solid var(--accentColor);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+
+  padding-right: 60px;
+  background: url(../images/but/arrow-b.svg) no-repeat left 75% center;
+ 
+
+  transition: border-color var(--transitionDuration) var(--transitionTimingFunction);
+
+  &:hover,
+  &:focus {
+    border-color: var( --btn-hoverColor);
   }
-
-
-  .btn__off {
-    position: relative;
-    max-width: 450px;
-    min-width: 120px;
-    min-height: 40px;
-    padding: 11px 26px;
-  
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15 / 12);
-    color: var(--accentColor);
-    text-decoration: underline;
-    // text-transform: uppercase;
-    
-    background-color: transparent;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    overflow: hidden;
-    cursor: pointer;
-  
-    transition: border-color var(--transitionDuration) var(--transitionTimingFunction);
-  
-    &:hover   {
-      
-      color: var(--btn-hoverColor);
+  &:focus {
+      outline: none;
+      background: url(../images/but/arrow-w.svg) no-repeat left 75% center;
+      color: var(--extrabackgroundColor);
     }
-    &:focus {
-        outline: none;
-        color: var(--extrabackgroundColor);
-      }
-    &:disabled {
-        outline: none;   
-        color: var(--btn-disabledColor);
-        cursor: initial;
-      }  
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-        line-height: calc(18 / 14);
-        padding: 12px 34px;
-        border-radius: 10px;
-        
+  &:disabled {
+      outline: none;
+      color: var(--primaryColor);
+      border-color: var(--btn-disabledColor);
+      cursor: initial;
     }  
+  // @media screen and (min-width: 1200px) {
+  //     font-size: 14px;
+  //     line-height: calc(18 / 14);
+  //     padding: 12px 34px;
+  //     border-radius: 10px;
+      
+  // }  
+}
+
+.btn__buy-arrow {
+  position: relative;
+  max-width: 250px;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 12px 40px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: #000000;
+  // text-transform: uppercase;
+  
+ 
+  border: 2px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+
+  padding-right: 50px;
+background: url(../images/but/arrow-b.svg) no-repeat left 75% center;
+  background-color: var(--accentColor);
+
+  transition: border-color var(--transitionDuration) var(--transitionTimingFunction);
+
+  &:hover,
+  &:focus {
+    
+    background-color: var(--btn-hoverColor);
   }
+  &:focus {
+      outline: none;
+     
+      color: var(--extrabackgroundColor);
+     background: url(../images/but/arrow-w.svg) no-repeat left 75% center;
+      background-color: var(--btn-hoverColor);
+
+      
+    }
+  &:disabled {
+      outline: none;
+      color: var(--primaryColor);
+      border-color: var(--btn-disabledColor);
+      background-color: var(--btn-disabledColor);
+      cursor: initial;
+    }  
+ 
+}

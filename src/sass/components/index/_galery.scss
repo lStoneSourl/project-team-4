@@ -27,10 +27,9 @@
 .gallery__big {
     display: block;
     width: 100vw;  
-   padding-left: 15px;
-   padding-right: 15px;
+   
    margin-bottom: 80px;
-   border-radius: 6.5%;
+   border-radius: 5%;
 }
 .gallery__smail {
     border-radius: 50%;
@@ -47,7 +46,7 @@
 }
 .gallery__text {
     position: absolute;
-    padding: 35px 39px;
+    padding: 35px 40px;
 
     font-family: 'Montserrat';
     font-style: normal;

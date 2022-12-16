@@ -1,37 +1,7 @@
-a,
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 0px;
-}
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 .container {
-   
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
-
-  //  outline: 1px solid #dc143c55;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
 }
 
 .page-footer {

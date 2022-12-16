@@ -1,0 +1,47 @@
+<button type="button" class="js-open-modal5" data-modal="5"> Открити Product card></button>
+
+<!-- Несколько модальных окон -->
+
+<div class="modal container__modal--review" data-modal="5">
+    <!--   Svg иконка для закрытия окна  -->
+    <svg class="modal__cross js-modal-close5" 5">
+        <use href=" ./images/symbol-defs.svg#icon-card-_close20x20"></use>
+    </svg>
+    <h2 class="review__title">Thank you for your interest in owning an Ice Cream shop</h2>
+    <p class="review__slogan">Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+        applications at this
+        time. Once
+        the application process resumes, we will contact you for further information. Please fill out the contact
+        information
+        below and we will reach out for additional information. We appreciate &nbsp; your patience.</p>
+
+    <form class="form" autocomplete="on">
+        <div class="form__group">
+            <input class="form__field" type="text" required name="user-name" id="user-name" />
+            <label class="form__label" for="user-name">Name</label>
+        </div>
+
+        <div class="form__group">
+            <input class="form__field" type="tel" name="tel" id="tel" required minlength="6" maxlength="12" />
+            <label class="form__label" for="tel">Phone
+
+            </label>
+        </div>
+
+        <div class="form__group">
+            <input class="form__field" type="Email" name="Email" id="Email" required minlength="6" maxlength="12" />
+            <label class="form__label" for="tel">Email</label>
+        </div>
+
+        <div class="form__coment">
+            <textarea class="form__textarea" name="comment" rows="3"></textarea>
+            <label class="form__textarea-label list">Comment</label>
+        </div>
+
+        <button class="btn__colored" type="submit">Submit</button>
+    </form>
+</div>
+<div class="overlay-modal5 js-overlay-modal5"></div>
+<!-- Подложка под модальным окном -->
+<div class="overlay-modal5 js-overlay-modal5"></div>
+<script src="./js/modal5.js" type="module"></script>

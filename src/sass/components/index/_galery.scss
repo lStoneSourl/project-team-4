@@ -1,10 +1,50 @@
 
+.gallery {
+    padding-top: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // mobail
+    background-image: url(../images/Backgroud_mobile885x1242.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/Backgroud_mobile1770x2484@2x.jpg);
+    
+    }
+    // tablet
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/Background_tablet963x1017.jpg);
+    
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/Background_tablet1926x2034@2x.jpg);
+        }
+        
+        //desctop
+        @media screen and (min-width: 1200px) {
+        background-image: url(../images/Backgroud_desktop1300x1350.jpg);
+        
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/Backgroud_desktop2600x2700@2x.jpg);
+        }
+        }
+        }
+}
+
+
+.swiper-wrapper {
+    display: none;
+}
 .swiper {
     display: block;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     height: 1069px;
-    background-image: url(../images/Backgroud_mobile885x1242.jpg);
     
 }
 .swiper-slide {
@@ -21,15 +61,21 @@
     border-radius: 50%;
     background-color: #fff;
 }
-.gallery__images {
-    border-radius: 10%;
-}
+
 .gallery__big {
     display: block;
-    width: 100vw;  
-   
-   margin-bottom: 80px;
-   border-radius: 5%;
+    width: 100vw;
+    margin-bottom: 80px;
+    border-radius: 8px;
+
+    @media screen and (min-width: 768px) {
+        width: 704px;
+        height: 327px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1013px;
+        height: 422px;
+    }
 }
 .gallery__smail {
     border-radius: 50%;
@@ -37,14 +83,33 @@
 
 .gallery__one {
     position: relative;
+
     margin-bottom: 32px;
     margin-top: 32px;
     width: 280px;
     height: 256px;
     background-color: #84A178;;
     border-radius: 10px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+        width: 705px;   
+        height: 138px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+        width: 968px;   
+        height: 138px;
+    }
 }
 .gallery__text {
+    
     position: absolute;
     padding: 35px 40px;
 
@@ -54,11 +119,29 @@
     font-size: 12px;
     line-height: 255%;
 
-
-    text-align: center;
+    
 
     color: #FCFCFC;
-
+    @media screen and (min-width: 768px) and  (max-width: 1199px) {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        
+        
+        padding-left: 99px;
+        padding-right: 99px;
+        padding-top: 28px;
+        padding-bottom: 29px;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: 20%;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
     
 }
 .gallery__title {

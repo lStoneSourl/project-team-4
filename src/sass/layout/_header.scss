@@ -1,0 +1,28 @@
+.header {
+    background-color: var(--backgroundColor);
+}
+.header_container {
+    max-width: 480px;
+    margin: 0px auto;
+    padding: 12px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-navigation {
+    display: none;
+}
+.main-navigation_list {
+    list-style-type: none;
+}
+
+.header_menu-button {
+    background-color:  transparent;
+    border-color: transparent;
+}
+
+.header_order-button {
+    display: none;
+}
+.main-navigation_link {
+    text-decoration: none;
+}

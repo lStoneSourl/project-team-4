@@ -1,19 +1,244 @@
 .hero {
-    background-color: var(--backgroundColor);;
+    background-color: var(--backgroundColor);
+
 }
 
 .hero_container {
     max-width: 480px;
+    height: 454px;
     margin: 0px auto;
-    padding: 0px 20px;
+    padding: 50px 20px 0px;
+    position: relative;
+    background-image: url(../images/dots_M320x50.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/dots_M640x100@2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/dots_T768x69.png);
+        max-width: 768px;
+        padding: 14px 32px 0px;
+        display: flex;
+        justify-content: space-between;
+        height: 349px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/dots_T1536x137@2x.png);
+        }
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        height: 664px;
+        padding: 45px 16px 0px;
+        background-image: url(../images/dots_D1200x384.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/dots_D2400x768@2x.png);
+        }
+
+    }
 }
 
 .hero_title {
-    font-family: 'Seymour One';
+    font-family: 'Seymour One', sans-serif;
     color: var(--textColor);
+    max-width: 247px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 367px;
+        font-size: 38px;
+        line-height: 1.26;
+        margin-bottom: 28px;
+    }
 }
 
 .hero_links-list {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+}
+
+.hero_link-item {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    outline: transparent;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14;
+        line-height: 1.25;
+    }
+}
+
+.hero_link-item--transparent {
+    padding: 9px 24px;
+    color: #000;
+    border: solid 2px var(--accentColor);
+    border-radius: 8px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 10px 32px;
+    }
+}
+
+.hero_link-item--transparent:hover,
+.hero_link-item--transparent:focus {
+    border-color:  var(--btn-hoverColor);
+}
+
+.hero_link-item--only-text {
+    color: var(--accentColor);
+    text-decoration: underline;
+
+    @media screen and (min-width: 1200px) {
+        padding: 12px 22px;
+    }
+}
+
+.hero_link-item--only-text:hover {
+    color: var(--btn-hoverColor);
+}
+
+.hero_link-item--only-text:focus {
+    color: var(--textColor);
+}
+
+.dish-description {
+    display: none;
+    position: absolute;
+    left: 216px;
+    bottom: 24px;
+    width: 139px;
+    color: var(--textColor);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        width: 200px;
+        left:  256px;
+        bottom: 103px;
+    }
+}
+
+.dish-description_arrow {
+    width: 40px;
+    height: 16px;
+    fill: var(--textColor);
+    margin-top: 12px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 24px;
+    }
+}
+
+.hero_dish-image {
+    display: none;
+    position: absolute;
+    left: 32px;
+    bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 16px;
+        bottom: 67px;
+    }
+}
+
+.achievements-list {
+    display: none;
+    padding-top: 28px;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 53px;
+    }
+}
+
+.achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.achievement_number {
+    color: var(--primaryColor);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 46px;
+        line-height: 1.21;
+        text-transform: uppercase;
+    }
+}
+
+.achievement_descr {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--extrabackgroundColor);
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+
+    @media screen and ( min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.21;
+    }
+}
+
+.hero_icecream-image {
+    position: absolute;
+    bottom: 0px;
+    left: 25%;
+
+    @media screen and (min-width: 768px) {
+        left: 408px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 652px;
+    }
 }

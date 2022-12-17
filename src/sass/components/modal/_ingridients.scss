@@ -1,20 +1,80 @@
+
+
 /* Стили для подложки */
 .overlay-modal {
-    background-color: #ffffff;
-    z-index: 20;
-    transition: .3s all;
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  // background-color: #ffffff;
+  z-index: 100;
+  // transition: .3s all;
 }
 
-.modal {
-    background-color: #ffffff;
+/* Стили для модальных окон */
 
-    @media screen and (min-width: 568px) {
-        max-width: 568px;
-    }
+.modal.modal--ingridients {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+  background-color: #ffffff;
+  /*  Установаем ширину окна  */
+  max-width: 88%;
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 150;
+  /* Должен быть выше чем у подложки*/
+  /*  Побочные стили   */
+  text-align: center;
+  padding: 28px 20px;
+  border: 2px solid #F8D24E;
+
+  @media screen and (min-width: 768px) {
+    max-width: 568px;
+    padding: 32px 40px;
+  }  
 }
-.modal__title {
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    fill: #131313;
+    cursor: pointer;
+}
+
+/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+
+.modal__title--ingridients {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
-    line-height: 28px;
+    line-height: calc(28 / 20);
 }
 
 .circle__img {
@@ -95,9 +155,13 @@
 }
 
 .ingredients {
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: space-between;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 48px;
+  }
 }
 
 .ingredients__list {
@@ -124,26 +188,92 @@
     color: var(--primaryColor);
 }
 
-.form__group {
-    margin-bottom: 16px;
+.form___ingridients {
+  width: 100%;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+  }
+}
+.form__group--ingridients {
+  margin-bottom: 16px;
+  position: relative;
 }
 
-.form__field {
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 10.43px;
+.form__field--ingridients {
+  display: block;
+  width: 100%;
+  height: 42px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 10.43px;
+  border-radius: 10px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+
 }
 
-.form__label {
+.form__field--ingridients:focus+.form__label--ingridients {
+  opacity: 0;
+}
+
+.form__label--ingridients {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 10.43px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 16px;
+  }
+}
+
+.form__coment--ingridients {
+    position: relative;
+}
+
+.form__textarea--ingridients {
+  display: block;
+  width: 100%;
+  height: 84px;
+  padding-top: 11px;
+  padding-left: 10.43px;
+  margin-bottom: 24px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+  resize: none;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 16px;
+  }
+}
+
+.form__textarea-label--ingridients {
+    position: absolute;
+    top: 0;
+    left: 0;
     padding-top: 11px;
-    padding-bottom: 11px;
     padding-left: 10.43px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 140%;
+    color: #131313;
 }
 
-.form__textarea {
-    padding-top: 11px;
-    padding-left: 10.43px;
-    margin-bottom: 24px;
+.form__textarea--ingridients:focus+.form__textarea-label--ingridients {
+    opacity: 0;
 }

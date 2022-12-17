@@ -186,5 +186,9 @@
   height: 42px;
   padding-top: 12px 15px 12px 34px;
   margin-top: 10px;
+
+  @media screen and(min-width: 768px) {
+    margin-top: 32px;
+  }
 }
 

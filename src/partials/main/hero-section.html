@@ -1,10 +1,45 @@
 <section class="hero">
     <div class="hero_container">
-        <h1 class="hero_title">ice cream made with passion</h1>
-        <ul class="hero_links-list">
-            <li class="hero_link-item"><a href="#products">Products</a></li>
-            <li class="hero_link-item"><a href="#how-its-made">How it’s made?</a></li>
+        <div>
+            <h1 class="hero_title">ice cream made with passion</h1>
+            <ul class="hero_links-list">
+                <li><a class="hero_link-item hero_link-item--transparent"  href="#products">Products</a></li>
+                <li><a class="hero_link-item hero_link-item--only-text" href="#how-its-made">How it’s made?</a></li>
+            </ul>
+            <p class="dish-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                <svg class="dish-description_arrow">
+                    <use href="./images/symbol-defs.svg#icon-Arrow"></use>
+                </svg>
+            </p>
+        </div>
+        <ul class="achievements-list">
+            <li class="achievement">
+                <strong class="achievement_number">16</strong>
+                <span class="achievement_descr">cafes</span>
+            </li>
+            <li class="achievement">
+                <strong class="achievement_number">23</strong>
+                <span class="achievement_descr">food trucks</span>
+            </li>
         </ul>
-        <img class="hero_icecream-image" src="./images/ice_creamM177x217.png" alt="icecream">
+        <img class="hero_dish-image"
+        srcset="
+        ./images/plate_T_152x152.png 152w,
+        ./images/plate_D225x225.png 225w,
+        ./images/plate_T_304x304@2x.png 304w,
+        ./images/plate_D450x450@2x.png 450w
+        "
+        sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw" 
+        src="./images/plate_T_152x152.png" alt="dish">
+        <img class="hero_icecream-image" srcset="
+        ./images/ice_creamM177x217.png 177w,
+        ./images/ice-cream_T_268x329.png 268w,
+        ./images/ice_creamD456x560.png 456w,
+        ./images/ice_creamM354x434@2x.png 354w,
+        ./images/ice-cream_T_536x658@2x.png 536w,
+        ./images/ice_creamD912x1120@2x.png 912w
+        "
+        sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (max-width: 768px) 177px, 100vw" 
+        src="./images/ice_creamM177x217.png" alt="icecream">
     </div>
 </section>

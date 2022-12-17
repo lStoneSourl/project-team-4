@@ -42,12 +42,12 @@
 
     @media screen and (min-width: 768px) {
         height: 260px;
-        background-image: url(../images/poltava448x260.jpg);
+        background-image: url(../images/poltava448x260.png);
 
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution:192dpi),
             screen and (min-resolution: 2dppx) {
-            background-image: url(../images/poltava896x520@2x.jpg)
+            background-image: url(../../../images/poltava896x520@2x.png)
         }
     }
 }

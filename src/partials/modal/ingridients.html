@@ -1,10 +1,14 @@
 <button type="button" class="js-open-modal" data-modal="1">Открытьingredients></button>
-<div class="modal" data-modal="1">
+
+<div class="overlay-modal js-overlay-modal"></div>
+<div class="modal modal--ingridients" data-modal="1">
+
+    <div class="overlay-modal js-overlay-modal"></div>
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close"">
         <use href=" ./images/symbol-defs.svg#icon-card-_close20x20"></use>
     </svg>
-    <h1 class="modal__title">Chololate <br /> icecream</h1>
+    <h2 class="modal__title--ingridients">Chololate <br /> icecream</h2>
     <div class="circle__img">
         <img class="picture__chololate" src="./images/ChololateM132x132.jpg" alt="Chololate" width="132" height="132">
     </div>
@@ -59,23 +63,25 @@
         </div>
     </div>
 
-    <form class="form" autocomplete="on">
-        <div class="form__group">
-            <input class="form__field" type="text" required name="user-name" id="user-name" />
-            <label class="form__label" for="user-name">Name</label>
+    <form class="form___ingridients" autocomplete="on">
+        <div class="form__group--ingridients">
+            <input class="form__field--ingridients" type="text" required name="user-name" id="user-name" />
+            <label class="form__label--ingridients" for="user-name">Name</label>
         </div>
 
-        <div class="form__group">
-            <input class="form__field" type="tel" name="tel" id="tel" required minlength="6" maxlength="12" />
-            <label class="form__label" for="tel">Phone</label>
+        <div class="form__group--ingridients">
+            <input class="form__field--ingridients" type="tel" name="tel" id="tel" required minlength="6"
+                maxlength="12" />
+            <label class="form__label--ingridients" for="tel">Phone</label>
         </div>
 
-        <div class="form__coment">
-            <textarea class="form__textarea" name="comment" rows="5"></textarea>
-            <label class="form__textarea-label list">Comment</label>
+        <div class="form__coment--ingridients">
+            <textarea class="form__textarea--ingridients" name="comment" rows="5"></textarea>
+            <label class="form__textarea-label--ingridients">Comment</label>
         </div>
-        <button type="submit">Submit</button>
+
     </form>
+    <button type="submit">Submit</button>
     <!-- Подложка под модальным окном -->
-    <div class="overlay-modal js-overlay-modal"></div>
+    <!-- <div class="overlay-modal js-overlay-modal"></div> -->
 </div>

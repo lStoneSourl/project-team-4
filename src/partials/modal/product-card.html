@@ -9,22 +9,18 @@
     </svg>
     <h2 class="modal__title">Buy now</h2>
 
-    <div>
+    <div class="blok__product">
         <div class="blok__cream">
             <div class="circle__img--cream">
-                <img class="picture__cream"
-                    srcset="
+                <img class="picture__cream" srcset="
                   ./images/icecreamMTD132x132.jpg 1x
                   ./images/icecreamMTD264x264@2x.jpg 2x 
                   " src=" ./images/icecreamMTD132x132.jpg" alt="ice cream" sizes="132" />
             </div>
             <p class="picture__title">ice cream</p>
-            <div class="picture__blok"></div>
+            <div class="picture__blok picture__blok--cream"></div>
         </div>
-        <div>
-            <p class="picture__title">ice cream</p>
-            <div class="picture__blok"></div>
-        </div>
+
         <div class="blok__coffee">
             <div class="circle__img--coffee">
                 <img class="picture__coffee " srcset="
@@ -47,23 +43,24 @@
         </div>
     </div>
 
-    <form class="form" autocomplete="on">
-        <div class="form__group">
-            <input class="form__field" type="text" required name="user-name" id="user-name" />
-            <label class="form__label" for="user-name">Name</label>
+    <form class="form__product" autocomplete="on">
+        <div class="form__group--product">
+            <input class="form__field--product" type="text" required name="user-name" id="user-name" />
+            <label class="form__label--product" for="user-name">Name</label>
         </div>
 
-        <div class="form__group">
-            <input class="form__field" type="tel" name="tel" id="tel" required minlength="6" maxlength="12" />
-            <label class="form__label" for="tel">Phone</label>
+        <div class="form__group--product">
+            <input class="form__field--product" type="tel" name="tel" id="tel" required minlength="6" maxlength="12" />
+            <label class="form__label--product" for="tel">Phone</label>
         </div>
 
-        <div class="form__coment">
-            <textarea class="form__textarea" name="comment" rows="3"></textarea>
-            <label class="form__textarea-label list">Comment</label>
+        <div class="form__coment--product">
+            <textarea class="form__textarea--product" name="comment" rows="3"></textarea>
+            <label class="form__textarea-label--product">Comment</label>
         </div>
-        <button type="submit">Submit</button>
+
     </form>
+    <button type="submit">Submit</button>
 </div>
 <div class="overlay-modal2 js-overlay-modal2"></div>
 <!-- Подложка под модальным окном -->

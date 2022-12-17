@@ -32,12 +32,12 @@
     background-repeat: no-repeat;
     border-radius: 10px;
     margin-bottom: 22px;
-    background-image: url(../images/poltava224x199.png);
+    background-image: url(../images/poltavaM224x199.png);
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution:192dpi),
     screen and (min-resolution: 2dppx) {
-        background-image: url(../images/poltava448x398@2x.png)
+        background-image: url(../images/poltavaM448x398@2x.png)
     }
 
     @media screen and (min-width: 768px) {
@@ -47,7 +47,7 @@
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution:192dpi),
             screen and (min-resolution: 2dppx) {
-            background-image: url(../images/poltava896x520@2x.png)
+            background-image: url(../images/poltava896x520@2x.png);
         }
     }
 }

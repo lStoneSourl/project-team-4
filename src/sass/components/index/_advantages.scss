@@ -13,6 +13,8 @@ p {
 	padding-right: 15px;
 }
 
+
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -32,6 +34,15 @@ p {
 // ------Advantages------
 .advantages {
 	background-color: #84A178;
+	padding-bottom: 32px;
+
+	@media screen and (min-width: 768px) {
+		padding-bottom: 60px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding-bottom: 80px;
+	}
 }
 
 .advantages__list {

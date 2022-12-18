@@ -16,18 +16,18 @@
         <nav class="main-navigation">
             <ul class="main-navigation_list">
                 <li><a class="main-navigation_link" href="#">Home</a></li>
-                <li><a class="main-navigation_link" href="#">How it's made</a></li>
-                <li><a class="main-navigation_link" href="#">Our products</a></li>
-                <li><a class="main-navigation_link" href="#">Contacts</a></li>
+                <li><a class="main-navigation_link" href="#how-its-made">How it's made</a></li>
+                <li><a class="main-navigation_link" href="#products">Our products</a></li>
+                <li><a class="main-navigation_link" href="#contact">Contacts</a></li>
             </ul>
         </nav>
         <div class="header_button-container">
-            <button type="button" class="menu-button">
-                <svg class="menu-button_icon" width="32" height="32">
-                    <use href="./images/symbol-defs.svg#icon-eva_menu-fill-32x32"></use>
-                </svg>
-            </button>
-            <button type="button" class="btn__buy-arrow">Buy now</button>
+            <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+               <svg width="32" height="32">
+                   <use href="./images/symbol-defs.svg#icon-eva_menu-fill-32x32"></use>
+               </svg>
+           </button>
+            <button type="button" class="btn__buy-arrow js-open-modal2" data-modal="2">Buy now</button>
         </div>
     </div>
 </header>

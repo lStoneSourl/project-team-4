@@ -1,0 +1,202 @@
+
+.contacts-section {
+    @media screen and  (max-width: 481px)  {
+    
+      display: flex;
+      align-items: center;
+       flex-direction: column;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      box-sizing:content-box;
+     
+         
+  }
+  }
+  .cafe-set{
+    margin-bottom: 16px;
+  }
+  ul,li{
+    text-decoration: none;
+    list-style: none;
+  }
+  .contacts-container{
+   @media screen and  (max-width: 481px)  {
+  
+    width: 280px;
+    height: 412px;
+    border: 2px Solid rgba(212, 20, 67, 0.1);
+  background-color: Solid #FCFCFC; 
+   box-shadow: 0px 8px 30px
+  rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  
+   
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  
+   }
+  }
+  
+  .contacts-item{
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .contacts-title{
+    @media screen and  (max-width: 481px)  {
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      /* text-align: center; */
+      letter-spacing: .04em;
+      color: #131313;
+      width: 80px;
+      height: 22px;
+      background-color: #f8d24e;
+      border-radius: 4px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+    }  
+  
+  }
+  
+  .contacts-menu-town{
+    @media screen and  (max-width: 481px)  {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86; 
+    letter-spacing: 0.04em;
+    color: #131313;
+    padding-bottom: 8px;
+    }
+  }
+  .contacts-list{
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .contacts-menu-adress{
+    @media screen and  (max-width: 481px)  {
+    font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  
+  color: #D6936D;
+  
+  max-height: 40px;
+  max-width: 190px;
+  padding-bottom: 24px;
+  }
+  }
+  
+  // .contacts-box-bottom{
+  //   border-bottom-width: 216px;
+  //   border-bottom-style: dashed;
+  
+  
+  .contacts-opening-hours {
+    @media screen and  (max-width: 481px)  {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: #ABABAB;
+  }
+  }
+  .schedule{
+    padding-bottom: 24px;
+    padding-top: 24px;
+    max-width: 124px;
+    max-height: 96px;
+  }
+  // .sidebar {
+  //   box-sizing: border-box;
+  //   width: 200px;
+  //   padding: 20px;
+  //   border: 1px solid #DDD;
+  // }
+  .contacts-schedule{
+    @media screen and  (max-width: 481px)  {
+  display: flex;
+   flex-direction: column;
+   align-content: space-around;
+   flex-wrap: nowrap; 
+   justify-content: space-between;
+   align-items: stretch;
+    } 
+  }
+  
+  .contacts-tel-post {
+    box-sizing: content-box}
+  
+  .contacts-schedule::before{
+    display:block;
+    content:"" ;
+  max-width: 216px;
+  max-height: 0px;
+  border: 1px solid rgba(225, 225, 225, 1);
+  margin-bottom: 24px;
+  }
+  
+  .contacts-schedule::after{
+    @media screen and  (max-width: 481px)  {
+    display:block;
+    content:"" ;
+    max-width: 216px;
+     max-height: 0px;
+     border: 1px solid rgba(225, 225, 225, 1);
+     margin-top: 24px;
+    }
+  }
+  .contacts-schedule-working > span {
+    @media screen and  (max-width: 481px)  {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86; 
+    color: #131313;
+   
+    } 
+  }
+  
+  // , ::before{display: none;}
+  // .contacts-opening-hours{
+  //   font-family: Montserrat;
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   font-size: 12px;
+  //   line-height: 1.86;
+  //   color: #ABABAB;
+  // }
+  .contacts-tel-post{ 
+  max-width: 130px;
+  max-height: 44px;
+  margin-top:48px;
+  }
+  
+  .contacts-post,
+  .contacts-tel {
+    @media screen and  (max-width: 481px)  {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #131313;
+  }
+  }

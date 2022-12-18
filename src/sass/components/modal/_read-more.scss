@@ -1,14 +1,18 @@
 /* Стили для подложки */
 .overlay-modal {
-    z-index: 10;
+    z-index: 100;
 }
 .modal {
-    z-index: 20;
+    z-index: 500;
     border-radius: 10px;
-    @media screen and (min-width: 1200px) {
-        min-width: 568px;
+    background: #FFFFFF;
+    @media screen and (min-width:480) {
+        max-width: 568px;
     }
 }
+// .html5-video-container {
+//     text-align: center;
+// }
 .modal__title {
     font-size: 16px;
     line-height: calc(24 / 16);

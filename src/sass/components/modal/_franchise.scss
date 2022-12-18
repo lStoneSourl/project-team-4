@@ -20,12 +20,13 @@
     padding: 28px 30px;
     border: 2px solid #F8D24E;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
         transform: translate(-50%, -50%);
-        min-width: 568px;
+        max-width: 568px;
+    }
+
+    @media screen and (min-width: 768px) {
         padding: 32px 60px;
-
-
     }
 }
 .review__title {
@@ -60,22 +61,21 @@
 }
 
 .form--review {
-    margin-bottom: 24px;
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
+
+    @media screen and (min-width: 480px) {
         max-width: 568px;
         margin-left: auto;
         margin-right: auto;
     }
+
+    
 }
 
 
 .form__group--review {
-    position: relative;
     margin-bottom: 12px;
 
     @media screen and (min-width: 768px) {
-        max-width: 568px;
         margin-bottom: 16px;
     }
 }
@@ -91,47 +91,44 @@
     border-radius: 10px;
 
     @media screen and (min-width: 768px) {
+        height: 42px;
         padding-top: 11px;
         padding-bottom: 11px;
         padding-left: 16px;
     }
 }
 
-.form__field--review:focus+.form__label--review {
-    opacity: 0;
-}
-
-.form__label--review {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 8px 12px;
-
+.form__field--review:placeholder-shown {
     font-weight: 400;
     font-size: 12px;
     line-height: 140%;
     color: #131313;
+}
 
-    @media screen and (min-width: 768px) {
-        height: 42px;
-        padding-left: 16px;
-        padding-top: 11px;
-        padding-bottom: 11px;
-    }
+.form__field--review:placeholder-shown {
+    border: 1px solid #84A178;
+}
+
+.form__field--review:not(:placeholder-shown) {
+    border-color: #2196f3;
 }
 
 .form__coment--review {
-    position: relative;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
 }
 
 .form__textarea--review {
+    
     display: block;
     width: 100%;
     height: 64px;
     padding: 8px 12px 40px 12px;
 
     background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
     border-radius: 10px;
     resize: none;
 
@@ -142,18 +139,17 @@
     }
 }
 
-.form__textarea-label--review {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 8px;
-    padding-left: 12px;
+.form__textarea--review::placeholder {
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    color: #131313;
+    color: #131313;  
 }
 
-.form__textarea--review:focus+.form__textarea-label--review {
-    opacity: 0;
+.form__textarea--review:placeholder-shown {
+    border: 1px solid #84A178;
+}
+
+.form__textarea--review:not(:placeholder-shown) {
+    border-color: #2196f3;
 }

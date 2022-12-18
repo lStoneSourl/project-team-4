@@ -74,18 +74,25 @@
 }
 
 .gallery__big {
-    display: block;
-    width: 100vw;
-    margin-bottom: 80px;
-    border-radius: 30px;
+    @media screen and (max-width: 767px) {
+        display: block;
+        width: 100vw;
+        margin-bottom: 80px;
+        border-radius: 10px;
+    }
+    
 
     @media screen and (min-width: 768px) {
         width: 704px;
         height: 327px;
+        border-radius: 16px;
+        margin-bottom: 100px;
     }
     @media screen and (min-width: 1200px) {
         width: 1013px;
         height: 422px;
+        border-radius: 26px;
+        margin-bottom: 140px;
     }
 }
 .gallery__smail {
@@ -146,10 +153,13 @@
         line-height: 186%;
         
         
-        padding-left: 99px;
-        padding-right: 99px;
+        padding-left: 80px;
+        padding-right: 80px;
         padding-top: 28px;
         padding-bottom: 29px;
+
+        text-align: center;
+        letter-spacing: 0.04em;
     }
     @media screen and (min-width: 1200px) {
         padding-top: 43px;
@@ -171,7 +181,7 @@
     
 }
 .gallery__title {
-    padding-bottom: 45px;
+    padding-bottom: 32px;
     
 
     font-family: 'Montserrat';

@@ -2,28 +2,25 @@
 
 <!-- Несколько модальных окон -->
 
-<div class="modal container__modal--product" data-modal="2">
+<div class="modal container__modal product ace" data-modal="2">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close2" 2">
         <use href=" ./images/symbol-defs.svg#icon-card-_close20x20"></use>
     </svg>
     <h2 class="modal__title">Buy now</h2>
 
-    <div>
+    <div class="blok__product blokice">
         <div class="blok__cream">
             <div class="circle__img--cream">
-                <img srcset="
+                <img class="picture__cream" srcset="
                   ./images/icecreamMTD132x132.jpg 1x
                   ./images/icecreamMTD264x264@2x.jpg 2x 
                   " src=" ./images/icecreamMTD132x132.jpg" alt="ice cream" sizes="132" />
             </div>
-            <p class="picture__title">ice cream</p>
-            <div class="picture__blok"></div>
+            <h3 class="picture__title">ice cream</h3>
+            <div class="picture__blok picture__blok--cream"></div>
         </div>
-        <div>
-            <p class="picture__title">ice cream</p>
-            <div class="picture__blok"></div>
-        </div>
+
         <div class="blok__coffee">
             <div class="circle__img--coffee">
                 <img class="picture__coffee " srcset="
@@ -31,9 +28,10 @@
                   ./images/icecoffeeMTD264x264@2x.jpg 2x
                   " src="./images/icecoffeeMTD132x132.jpg" alt="ice coffee" sizes="132" />
             </div>
-            <p class="picture__title">ice coffee</p>
+            <h3 class="picture__title">ice coffee</h3>
             <div class="picture__blok picture__blok--coffee"></div>
         </div>
+
         <div class="blok__milkshake">
             <div class="circle__img--milkshake">
                 <img class="picture__milkshake " srcset="
@@ -41,28 +39,34 @@
                       ./images/milkshakesMTD264x264@2x.jpg 2x
                       " src="./images/milkshakesMTD132x132.jpg" alt="milkshake" sizes="132" />
             </div>
-            <p class="picture__title picture__title--milkshake">milkshake</p>
+            <h3 class="picture__title picture__title--milkshake">milkshake</h3>
             <div class="picture__blok picture__blok--milkshake"></div>
         </div>
     </div>
 
-    <form class="form" autocomplete="on">
-        <div class="form__group">
-            <input class="form__field" type="text" required name="user-name" id="user-name" />
-            <label class="form__label" for="user-name">Name</label>
+    <form class="form__product" autocomplete="on">
+        <div class="form__group--product">
+            <input class="form__field--product" type="text" pattern="[A-Za-z]{2,15}"
+                title="Username must be upper or lower case letters" placeholder="Name" required name="user-name"
+                id="user-name" />
+            <label class="form__label--product" for="user-name"></label>
         </div>
 
-        <div class="form__group">
-            <input class="form__field" type="tel" name="tel" id="tel" required minlength="6" maxlength="12" />
-            <label class="form__label" for="tel">Phone</label>
+        <div class="form__group--product">
+            <input class="form__field--product" type="tel" placeholder="Phone" name="tel" id="tel" required
+                pattern="[0-9]{5,10}" title="Number must be 5 - 10 digits" />
+            <label class="form__label--product" for="tel"></label>
         </div>
 
-        <div class="form__coment">
-            <textarea class="form__textarea" name="comment" rows="3"></textarea>
-            <label class="form__textarea-label list">Comment</label>
+        <div class="form__coment--product">
+            <textarea class="form__textarea--product" placeholder="Comment" name="comment" rows="5"></textarea>
+            <label class="form__textarea-label--product"></label>
         </div>
-        <button type="submit">Submit</button>
+
+        <button class="btn__colored" type="submit">Submit</button>
+
     </form>
+
 </div>
 <div class="overlay-modal2 js-overlay-modal2"></div>
 <!-- Подложка под модальным окном -->

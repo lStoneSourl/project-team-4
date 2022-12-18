@@ -1,14 +1,10 @@
 <button type="button" class="js-open-modal" data-modal="1">Открытьingredients></button>
-
-
-<div class="modal modal--ingridients" data-modal="1">
-
-    <div class="overlay-modal js-overlay-modal"></div>
+<div class="modal" data-modal="1">
     <!--   Svg иконка для закрытия окна  -->
     <svg class="modal__cross js-modal-close"">
         <use href=" ./images/symbol-defs.svg#icon-card-_close20x20"></use>
     </svg>
-    <h2 class="modal__title--ingridients">Chololate <br /> icecream</h2>
+    <h1 class="modal__title">Chololate <br /> icecream</h1>
     <div class="circle__img">
         <img class="picture__chololate" src="./images/ChololateM132x132.jpg" alt="Chololate" width="132" height="132">
     </div>
@@ -39,7 +35,7 @@
         </li>
     </ul>
 
-    <h3 class="title__ingredients">Ingredients</h3>
+    <h2 class="title__ingredients">Ingredients</h2>
     <div class="ingredients">
         <div class="ingredients__title">
             <ul class="ingredients__list">
@@ -63,28 +59,23 @@
         </div>
     </div>
 
-    <form class="form___ingridients" autocomplete="on">
-        <div class="form__group--ingridients">
-            <input class="form__field--ingridients" type="text" pattern="[A-Za-z]{2,15}"
-                title="Username must be upper or lower case letters" placeholder="Name" required name="user-name"
-                id="user-name" />
-            <label class="form__label--ingridients" for="user-name"></label>
+    <form class="form" autocomplete="on">
+        <div class="form__group">
+            <input class="form__field" type="text" required name="user-name" id="user-name" />
+            <label class="form__label" for="user-name">Name</label>
         </div>
 
-        <div class="form__group--ingridients">
-            <input class="form__field--ingridients" type="tel" placeholder="Phone" name="tel" id="tel" required
-                pattern="[0-9]{5,10}" title="Number must be 5 - 10 digits" />
-            <label class="form__label--ingridients" for="tel"></label>
+        <div class="form__group">
+            <input class="form__field" type="tel" name="tel" id="tel" required minlength="6" maxlength="12" />
+            <label class="form__label" for="tel">Phone</label>
         </div>
 
-        <div class="form__coment--ingridients">
-            <textarea class="form__textarea--ingridients" placeholder="Comment" name="comment" rows="5"></textarea>
-            <label class="form__textarea-label--ingridients"></label>
+        <div class="form__coment">
+            <textarea class="form__textarea" name="comment" rows="5"></textarea>
+            <label class="form__textarea-label list">Comment</label>
         </div>
-
-        <button class="btn__colored" type="submit">Submit</button>
+        <button type="submit">Submit</button>
     </form>
-
     <!-- Подложка под модальным окном -->
     <div class="overlay-modal js-overlay-modal"></div>
 </div>

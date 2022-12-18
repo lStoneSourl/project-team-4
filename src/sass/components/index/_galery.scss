@@ -123,10 +123,12 @@
 
 .gallery__text {
     
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        padding: 35px 40px;
+    }
     
     
-    position: absolute;
-    padding: 35px 40px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -150,11 +152,21 @@
         padding-bottom: 29px;
     }
     @media screen and (min-width: 1200px) {
-        flex-basis: 20%;
-        padding-left: 120px;
-        padding-right: 120px;
-        padding-top: 42px;
-        padding-bottom: 42px;
+        padding-top: 43px;
+        padding-bottom: 43px;
+        padding-right: 109px;
+        padding-left: 109px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 186%;
+/* or 30px */
+
+        text-align: center;
+        letter-spacing: 0.04em;
+        
     }
     
 }

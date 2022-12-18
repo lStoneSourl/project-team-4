@@ -87,6 +87,7 @@
     align-items: center;
     text-align: center;
     outline: transparent;
+    transition: color var(--transitionDuration) var(--transitionTimingFunction), border-color var(--transitionDuration) var(--transitionTimingFunction);
 
     @media screen and (min-width: 1200px) {
         font-size: 14;
@@ -110,6 +111,14 @@
     border-color:  var(--btn-hoverColor);
 }
 
+.hero_link-item--transparent:focus {
+    color: var(--textColor);
+}
+
+.hero_link-item--transparent:disabled {
+    border-color: var(--btn-disabledColor);
+}
+
 .hero_link-item--only-text {
     color: var(--accentColor);
     text-decoration: underline;
@@ -125,6 +134,10 @@
 
 .hero_link-item--only-text:focus {
     color: var(--textColor);
+}
+
+.hero_link-item--only-text:disabled {
+    color: var(--btn-disabledColor);
 }
 
 .dish-description {

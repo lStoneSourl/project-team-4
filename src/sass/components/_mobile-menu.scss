@@ -1,6 +1,6 @@
 .menu-container {
-    // display: none;
-    
+     display: none;
+     
     position: absolute;
     top: 0;
     left: 0;
@@ -10,6 +10,17 @@
     
      height: 100vh;
      width: 100vw;
+     
+     transform: translateX(110%);
+ 
+
+     &.is-open {
+      display: block;
+      transform: translateX(0);
+      transition: transform 4350ms ease-in-out;
+
+
+     }
 
      @media screen and (min-width: 768px) {
         padding: 25px 28px;

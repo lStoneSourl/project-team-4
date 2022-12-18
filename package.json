@@ -2,7 +2,7 @@
   "name": "project-team-4",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://lStoneSourl.github.io/project-team-4",
+  "homepage": "https://lstonesourl.github.io/project-team-4/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /project-team-4/"

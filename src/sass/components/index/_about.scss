@@ -21,7 +21,7 @@
     margin-bottom: 40px;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 45px;
   }
 }
@@ -180,13 +180,16 @@
   }
 }
 
-.btn__buy-arrow--about {
-  display: block;
-  margin: 0 auto;
-  width: 164px;
-  height: 42px;
-  padding: 10px 20px;
+// .btn__buy-arrow--about 
+//   display: block;
+//   margin: 0 auto;
+//   width: 164px;
+//   height: 42px;
+//   padding: 10px 20px;
+
+.btn__read {
   margin-top: 10px;
+  margin: 0 auto;
 
   @media screen and(min-width: 768px) {
     margin-top: 32px;

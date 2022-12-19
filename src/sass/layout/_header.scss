@@ -49,6 +49,7 @@
     line-height: 20px;
     color: var(--textColor);
     padding: 13px 0px;
+    transition: color var(--transitionDuration) var(--transitionTimingFunction);
 }
 
 .main-navigation_link:hover,

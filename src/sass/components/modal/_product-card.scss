@@ -1,89 +1,35 @@
-/* Стили для подложки */
-.overlay-modal {
-    /* Скрываем подложку  */
-    opacity: 0;
-    visibility: hidden;
+.modal1 {
+    padding: 28px;
+    
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-color: rgba(0, 0, 0, .5); */
-    z-index: 20;
+    @media screen and (min-width: 480px) {
+        max-width: 568px;
+    }
 
-}
-
-/* Стили для модальных окон */
-
-.modal {
-    /* Скрываем окна  */
-    opacity: 0;
-    visibility: hidden;
-
-    /*  Установаем ширину окна  */
-    width: 100%;
-    min-width: 280px;
-
-    /*  Центрируем и задаем z-index */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 50;
-    /* Должен быть выше чем у подложки*/
-    /*  Побочные стили   */
-    text-align: center;
-    padding: 28px 20px;
-    border: 2px solid #F8D24E;
-
-    @media screen and (min-width: 1200px) {
-        transform: translate(-50%, -50%);
-        min-width: 568px;
-
-
+    @media screen and (min-width: 768px) {
+        padding: 32px 54px;
     }
 
 }
 
-/* Стили для активных классов подложки и окна */
 
-.modal.active,
-.overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
+.blok__product.blokice {
 
-/* Стили для кнопки закрытия */
 
-.modal__cross {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    fill: #131313;
-    cursor: pointer;
-}
-
-/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
-
-.modal__title {
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
-
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(24 / 16);
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+    }
 }
 
 .blok__cream {
     position: relative;
     margin-bottom: 87px;
 
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 .circle__img--cream {
@@ -116,6 +62,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: calc(20 / 16);
+    letter-spacing: 0.04em;
     z-index: 110;
 
     text-align: center;
@@ -136,8 +83,12 @@
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    border: 2px solid #96AF8C;
     border-radius: 15px;
+}
+
+.picture__blok--cream {
+    border: 2px solid #96AF8C;
+
 }
 
 .picture__blok--coffee {
@@ -153,6 +104,10 @@
 .blok__coffee {
     position: relative;
     margin-bottom: 87px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 .circle__img--coffee {
@@ -177,12 +132,16 @@
     margin-left: auto;
     margin-right: auto;
     z-index: 10;
-    ;
+
 }
 
 .blok__milkshake {
     position: relative;
+    margin-bottom: 87px;
 
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 .circle__img--milkshake {
@@ -212,61 +171,105 @@
 
 .picture__title--milkshake {
     margin-bottom: 52px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
+.form__product {
+    width: 100%;
+    margin-bottom: 26px;
+
+    @media screen and (min-width: 480px) {
+        max-width: 368px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+
+    }
 }
 
 
-.form__group {
-    margin-bottom: 16px;
-    position: relative;
-}
-
-.form__field {
+.form__field--product {
     display: block;
     width: 100%;
     height: 32px;
+    margin-bottom: 12px;
+
     padding: 8px 48px 12px 8px;
     background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
     border-radius: 10px;
+
+    @media screen and (min-width: 768px) {
+        width: 368px;
+        height: 42px;
+        margin-bottom: 16px;
+        padding-left: 16px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
 }
 
-.form__label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 8px 48px 12px 8px;
-
+.form__field--product::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 140%;
     color: #131313;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
 }
 
-.form__coment {
-    position: relative;
+.form__field--product:placeholder-shown {
+    border: 1px solid #84A178;
 }
 
-.form__textarea {
+.form__field--product:not(:placeholder-shown) {
+    border-color: #2196f3;
+}
+
+
+.form__coment--product {
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+}
+
+.form__textarea--product {
     display: block;
     width: 100%;
     height: 65px;
     padding: 8px 48px 40px 12px;
-    margin-bottom: 26px;
 
     background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
     border-radius: 10px;
     resize: none;
+
+    @media screen and (min-width: 768px) {
+        height: 84px;
+        padding-top: 11px;
+        padding-left: 16px;
+    }
 }
 
-.form__textarea-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 11px;
-    padding-left: 10.43px;
+.form__textarea--product::placeholder {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 140%;
     color: #131313;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.form__textarea--product:placeholder-shown {
+    border: 1px solid #84A178;
+}
+
+.form__textarea--product:not(:placeholder-shown) {
+    border-color: #2196f3;
 }

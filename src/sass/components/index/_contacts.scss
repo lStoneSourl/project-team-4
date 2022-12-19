@@ -1,0 +1,527 @@
+
+.contacts-section {
+    @media screen and  (max-width: 480px)  {
+    
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      box-sizing:content-box;
+     gap: 16px;
+    }
+     @media screen and  (max-width: 768px)  {  
+      display: flex;
+      box-sizing: content-box;
+      flex-direction: row;
+      align-items: center;
+     
+      padding-top: 40px;
+      padding-bottom: 40px;
+       gap: 16px;
+     }
+
+     @media screen and  (max-width: 1200px)  {  
+      
+        display: flex;
+        box-sizing: content-box;
+        flex-direction: row;
+        align-items: center;
+       
+        padding-top: 40px;
+        padding-bottom: 40px;
+         gap: 32px;
+      }
+  }
+  
+  
+  ul,li{
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .contacts-container{
+   @media screen and  (max-width: 480px)  {  
+  display: flex;
+  flex-direction: column;
+    width: 280px;
+    height: 412px;
+    border: 2px Solid rgba(212, 20, 67, 0.1);
+  background-color: Solid #FCFCFC; 
+   box-shadow: 0px 8px 30px
+  rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+   }
+   @media screen and  (max-width: 768px)  {  
+    display: flex;
+    flex-direction: column;
+    width: 224px;
+    height: 537px;
+    border: 2px Solid rgba(212, 20, 67, 0.1);
+    background-color: Solid #FCFCFC; 
+     box-shadow: 0px 8px 30px
+    rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    padding: 40px 24px;
+   }
+   @media screen and  (max-width: 1200px)  {  
+    display: flex;
+    flex-direction: column;
+
+    width: 368px;
+    height: 542px;
+    border: 2px Solid rgba(212, 20, 67, 0.1);
+    background-color: Solid #FCFCFC; 
+     box-shadow: 0px 8px 30px
+    rgba(212, 20, 67, 0.1);
+    border-radius: 24px;  
+    padding: 40px 40px;  
+   }
+  }
+  
+  .contacts-item{
+    text-decoration: none;
+    list-style: none;
+  }
+  .contacts-name{
+    padding-bottom: 20px;
+  }
+
+  .contacts-title{
+    @media screen and  (max-width: 480px)  {
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      /* text-align: center; */
+      letter-spacing: .04em;
+      color: #131313;
+      width: 80px;
+      height: 22px;
+      background-color: #f8d24e;
+      border-radius: 4px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      margin-bottom: 20px;
+   }
+   @media screen and  (max-width: 768px)  {
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    /* or 22px */
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.04em;
+    
+    color: #131313;
+    width: 73px;
+    height: 30px;
+    background-color: #f8d24e;
+    border-radius: 4px;
+   
+    margin-bottom: 36px;
+   }
+   @media screen and  (max-width: 1200px)  { 
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+
+    text-align: center;
+    letter-spacing: 0.04em; 
+    color: #131313;
+    width: 76px;
+    height: 30px;
+    background-color: #f8d24e;
+    border-radius: 6px;
+   
+    margin-bottom: 32px;
+  }
+  }
+    .contacts-title-foodtruck{
+      @media screen and  (max-width: 480px)  {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        /* text-align: center; */
+        letter-spacing: .04em;
+        color: #131313;
+        width: 130px;
+        height: 22px;
+        background-color: #f8d24e;
+        border-radius: 4px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 20px;    
+      }
+      @media screen and  (max-width: 768px)  {
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.4;
+        /* or 22px */
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.04em;
+        
+        color: #131313;
+        width: 73px;
+        height: 30px;
+        background-color: #f8d24e;
+        border-radius: 4px;
+       
+        margin-bottom: 36px;
+       }
+       @media screen and  (max-width: 1200px)  { 
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.4;
+    
+        text-align: center;
+        letter-spacing: 0.04em; 
+        color: #131313;
+        width: 76px;
+        height: 30px;
+        background-color: #f8d24e;
+        border-radius: 6px;
+       
+        margin-bottom: 32px;
+      }
+      }
+ 
+  
+
+
+  .contacts-menu-town{
+    @media screen and  (max-width: 480px)  {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86; 
+    letter-spacing: 0.04em;
+    color: #131313;
+    padding-bottom: 8px;
+   }
+   @media screen and  (max-width: 768px)  {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+
+    color: #131313;
+    padding-bottom: 12px;
+   }
+   @media screen and  (max-width: 1200px)  {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: #131313;
+    padding-bottom: 8px;
+   }
+  }
+
+  .contacts-list{
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .contacts-menu-adress{
+  @media screen and  (max-width: 480px)  {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #D6936D;
+  
+  max-height: 40px;
+  max-width: 190px;
+  padding-bottom: 24px;
+  }
+  @media screen and  (max-width: 768px)  {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.83;
+  
+  letter-spacing: 0.04em;
+  
+  color: #D6936D;
+  max-height: 71px;
+  max-width: 173px;
+  padding-bottom: 32px;
+  }
+  @media screen and  (max-width: 1200px)  {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    
+    color: #D6936D; 
+    max-height: 50px;
+    max-width: 262px;
+    padding-bottom: 32px;
+  }
+}
+  // .contacts-box-bottom{
+  //   border-bottom-width: 216px;
+  //   border-bottom-style: dashed;
+  
+  
+  .contacts-opening-hours {
+    @media screen and  (max-width: 480px)  {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: #ABABAB;
+  }
+  @media screen and  (max-width: 768px)  {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    color: #907E82;
+  }
+  @media screen and  (max-width: 1200px)  {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    color: #ABABAB;
+
+  }
+  }
+  .schedule{
+    @media screen and  (max-width: 480px)  {
+    padding-bottom: 24px;
+    padding-top: 24px;
+    max-width: 124px;
+    max-height: 96px;
+  }
+  @media screen and  (max-width: 768px)  { 
+    padding-bottom: 32px;
+    padding-top: 32px;
+    max-width: 144px;
+    max-height: 112px;
+  }
+  @media screen and  (max-width: 1200px)  {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    max-width: 288px;
+    max-height: 316px;
+  }
+  }
+  // .sidebar {
+  //   box-sizing: border-box;
+  //   width: 200px;
+  //   padding: 20px;
+  //   border: 1px solid #DDD;
+  // }
+  .contacts-schedule{
+    @media screen and  (max-width: 480px)  {
+  display: flex;
+   flex-direction: column;
+   align-content: space-around;
+   flex-wrap: nowrap; 
+   justify-content: space-between;
+   align-items: stretch;
+    } 
+    @media screen and  (max-width: 768px)  {
+    display: flex;
+   flex-direction: column;
+   align-content: space-around;
+   flex-wrap: nowrap; 
+   justify-content: space-between;
+   align-items: stretch;
+    }   
+  @media screen and  (max-width: 1200px)  {
+    display: flex;
+   flex-direction: column;
+   align-content: space-around;
+   flex-wrap: nowrap; 
+   justify-content: space-between;
+   align-items: stretch;
+    } 
+  }
+  
+  .contacts-tel-post {
+    box-sizing: content-box}
+  
+  .contacts-schedule::before{
+    @media screen and  (max-width: 320px) {
+      display:block;
+      content:"" ;
+    max-width: 216px;
+    max-height: 0px;
+    border: 1px solid rgba(225, 225, 225, 1);
+    margin-bottom: 24px;
+  }
+  
+    @media screen and  (max-width: 480px) {
+    display:block;
+    content:"" ;
+  max-width: 216px;
+  max-height: 0px;
+  border: 1px solid rgba(225, 225, 225, 1);
+  margin-bottom: 24px;
+}
+  @media screen and  (max-width: 768px) {
+    display:block;
+    content:"" ;
+  max-width: 176px;
+  max-height: 0px;
+  border: 1px solid rgba(225, 225, 225, 1);
+  margin-bottom: 32px;
+}
+  @media screen and  (max-width: 1200px) {
+  display:block;
+  content:"" ;
+  max-width: 288px;
+   max-height: 0px;
+   border: 1px solid rgba(225, 225, 225, 1);
+   margin-bottom: 32px;
+
+  }
+  }
+  
+  .contacts-schedule::after{
+    @media screen and  (max-width: 320px) {
+      display:block;
+      content:"" ;
+    max-width: 216px;
+    max-height: 0px;
+    border: 1px solid rgba(225, 225, 225, 1);
+    margin-top: 24px;
+  }
+    @media screen and  (max-width: 480px)  {
+    display:block;
+    content:"" ;
+    max-width: 216px;
+     max-height: 0px;
+     border: 1px solid rgba(225, 225, 225, 1);
+     margin-top: 24px;
+    }
+    @media screen and  (max-width: 768px) {
+      display:block;
+      content:"" ;
+    max-width: 176px;
+    max-height: 0px;
+    border: 1px solid rgba(225, 225, 225, 1);
+    margin-top: 32px;
+  }
+  @media screen and  (max-width: 1200px) {
+    display:block;
+    content:"" ;
+    max-width: 288px;
+     max-height: 0px;
+     border: 1px solid rgba(225, 225, 225, 1);
+     margin-top: 32px;
+  }
+  }
+
+  .contacts-schedule-working > span {
+    @media screen and  (max-width: 480px)  {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86; 
+    color: #131313;
+    } 
+    @media screen and  (max-width: 768px)  {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    color: #131313;
+    }
+    @media screen and  (max-width: 1200px)  {
+      font-family:Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: #131313;
+  }
+}
+  // , ::before{display: none;}
+  // .contacts-opening-hours{
+  //   font-family: Montserrat;
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   font-size: 12px;
+  //   line-height: 1.86;
+  //   color: #ABABAB;
+  // }
+  .contacts-tel-post{ 
+    @media screen and  (max-width: 480px)  {
+  max-width: 130px;
+  max-height: 44px;
+  margin-top:  92px;
+    }
+  @media screen and  (max-width: 768px)  {
+    ax-width: 151px;
+    max-height: 46px;
+    margin-top:  116px;
+  }
+   @media screen and  (max-width: 1200px)  {
+    max-width: 173px;
+    max-height: 52px;
+    margin-top: 124px;
+  }
+}  
+  .contacts-post,
+  .contacts-tel {
+    @media screen and  (max-width: 480px)  {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #131313;
+  }
+  @media screen and  (max-width: 768px)  {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.50;
+    color: #131313;
+  }
+  @media screen and  (max-width: 1200px)  {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.50;
+  color: #131313;
+}
+  }

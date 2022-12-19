@@ -176,8 +176,11 @@
     line-height: calc(22 / 12);
     color: #FFFFFF;
 
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
+
     &:hover,
     &:focus {
+      transition: all var(--transitionDuration) var(--transitionTimingFunction);
       outline: none;
       color: var(--accentColor);
     }

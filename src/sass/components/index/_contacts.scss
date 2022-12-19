@@ -1,36 +1,51 @@
 
 .contacts-section {
-    @media screen and  (max-width: 480px)  {
-    
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+    @media screen and  (min-width: 480px)  {  
+      gap: 16px;
       padding-top: 40px;
       padding-bottom: 20px;
-      box-sizing:content-box;
-     gap: 16px;
-    }
-     @media screen and  (max-width: 768px)  {  
       display: flex;
-      box-sizing: content-box;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1200px;
+      max-height: 1487px;
+      background-color: 
+      rgba(132, 161, 120, 1);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center top (320px);
+
+  
+    }
+     @media screen and  (min-width: 768px)  { 
+      max-height: 625px;
+      background-position: center top (625px);
+      display: flex;
+   
       flex-direction: row;
-      align-items: center;
-     
+      gap: 16px;
       padding-top: 40px;
       padding-bottom: 40px;
-       gap: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: space-around;
+      
      }
 
-     @media screen and  (max-width: 1200px)  {  
-      
-        display: flex;
-        box-sizing: content-box;
-        flex-direction: row;
-        align-items: center;
+     @media screen and  (min-width: 1200px)  {  
+     
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: space-around;
        
-        padding-top: 40px;
-        padding-bottom: 40px;
-         gap: 32px;
+    
       }
   }
   
@@ -41,17 +56,17 @@
   }
 
   .contacts-container{
-   @media screen and  (max-width: 480px)  {  
+   @media screen and  (min-width: 480px)  {  
   display: flex;
   flex-direction: column;
-    width: 280px;
+    max-width: 280px;
     height: 412px;
     border: 2px Solid rgba(212, 20, 67, 0.1);
   background-color: Solid #FCFCFC; 
    box-shadow: 0px 8px 30px
   rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-
+  background-color:  rgba(252, 252, 252, 1);  
     padding-top: 40px;
     padding-bottom: 20px;
     padding-right: 20px;
@@ -62,12 +77,13 @@
     flex-direction: column;
     width: 224px;
     height: 537px;
+
     border: 2px Solid rgba(212, 20, 67, 0.1);
     background-color: Solid #FCFCFC; 
      box-shadow: 0px 8px 30px
     rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-
+   
     padding: 40px 24px;
    }
    @media screen and  (max-width: 1200px)  {  
@@ -80,7 +96,7 @@
     background-color: Solid #FCFCFC; 
      box-shadow: 0px 8px 30px
     rgba(212, 20, 67, 0.1);
-    border-radius: 24px;  
+   
     padding: 40px 40px;  
    }
   }
@@ -117,14 +133,11 @@
    }
    @media screen and  (max-width: 768px)  {
 
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
+  
     font-size: 16px;
     line-height: 1.4;
     /* or 22px */
-    text-transform: uppercase;
-    text-align: center;
+   
     letter-spacing: 0.04em;
     
     color: #131313;
@@ -177,23 +190,18 @@
       }
       @media screen and  (max-width: 768px)  {
 
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
+       
         font-size: 16px;
         line-height: 1.4;
-        /* or 22px */
-        text-transform: uppercase;
-        text-align: center;
         letter-spacing: 0.04em;
         
         color: #131313;
-        width: 73px;
+        width: 130px;
         height: 30px;
         background-color: #f8d24e;
         border-radius: 4px;
        
-        margin-bottom: 36px;
+        margin-bottom:36px;
        }
        @media screen and  (max-width: 1200px)  { 
         font-family: Montserrat;
@@ -205,7 +213,7 @@
         text-align: center;
         letter-spacing: 0.04em; 
         color: #131313;
-        width: 76px;
+        width: 130px;
         height: 30px;
         background-color: #f8d24e;
         border-radius: 6px;
@@ -488,17 +496,17 @@
     @media screen and  (max-width: 480px)  {
   max-width: 130px;
   max-height: 44px;
-  margin-top:  92px;
+  
     }
   @media screen and  (max-width: 768px)  {
     ax-width: 151px;
     max-height: 46px;
-    margin-top:  116px;
+    
   }
    @media screen and  (max-width: 1200px)  {
     max-width: 173px;
     max-height: 52px;
-    margin-top: 124px;
+   
   }
 }  
   .contacts-post,

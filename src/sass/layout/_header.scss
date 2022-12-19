@@ -72,13 +72,8 @@
         display: none;
     }
 }
-
-.menu-button_icon .menu-button:hover {
-    fill: var(--accentColor);
-}
-
-.btn__buy {
-    @media screen and (max-width: 768px) {
+.btn__hidden {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 }

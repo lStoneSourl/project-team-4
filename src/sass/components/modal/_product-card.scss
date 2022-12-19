@@ -1,58 +1,25 @@
-.overlay-modal {
-    /* Скрываем подложку  */
-    opacity: 0;
-    visibility: hidden;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.modal1 {
+    padding: 28px;
     
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 100;
-}
-
-
-.container__modal {
-    /* Скрываем окна  */
-    opacity: 0;
-    visibility: hidden;
-    /*  Установаем ширину окна  */
-    max-width: 88%;
-    /*  Центрируем и задаем z-index */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 50;
-    background: #FFFFFF;
-    /* Должен быть выше чем у подложки*/
-    /*  Побочные стили   */
-    text-align: center;
-    padding: 28px 20px;
-    border: 2px solid #F8D24E;
 
     @media screen and (min-width: 480px) {
         max-width: 568px;
     }
-    
+
     @media screen and (min-width: 768px) {
         padding: 32px 54px;
     }
+
 }
 
 
-
-.modal__title {
-    font-size: 16px;
-    line-height: calc(24 / 16);
-}
 .blok__product.blokice {
+
 
     @media screen and (min-width: 768px) {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 32px;
     }
 }
 
@@ -118,10 +85,12 @@
     box-sizing: border-box;
     border-radius: 15px;
 }
+
 .picture__blok--cream {
     border: 2px solid #96AF8C;
-    
+
 }
+
 .picture__blok--coffee {
     background: #EFD478;
     border: 2px solid #EFD478;
@@ -135,6 +104,7 @@
 .blok__coffee {
     position: relative;
     margin-bottom: 87px;
+
     @media screen and (min-width: 768px) {
         margin-bottom: 0;
     }
@@ -162,7 +132,7 @@
     margin-left: auto;
     margin-right: auto;
     z-index: 10;
-    
+
 }
 
 .blok__milkshake {
@@ -201,6 +171,7 @@
 
 .picture__title--milkshake {
     margin-bottom: 52px;
+
     @media screen and (min-width: 768px) {
         margin-bottom: 0;
     }
@@ -208,14 +179,14 @@
 
 .form__product {
     width: 100%;
-//    margin-bottom: 26px;
+    margin-bottom: 26px;
 
     @media screen and (min-width: 480px) {
         max-width: 368px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 60px;
-        
+
     }
 }
 
@@ -272,7 +243,7 @@
     width: 100%;
     height: 65px;
     padding: 8px 48px 40px 12px;
-    
+
     background: rgba(248, 210, 78, 0.1);
     border-radius: 10px;
     resize: none;
@@ -283,6 +254,7 @@
         padding-left: 16px;
     }
 }
+
 .form__textarea--product::placeholder {
     font-weight: 400;
     font-size: 12px;
@@ -301,4 +273,3 @@
 .form__textarea--product:not(:placeholder-shown) {
     border-color: #2196f3;
 }
-

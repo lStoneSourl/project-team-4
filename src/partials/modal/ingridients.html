@@ -1,90 +1,91 @@
-<button type="button" class="js-open-modal" data-modal="1">Открытьingredients></button>
+<button data-modal3-open3 type="button" class="ingridients">
+    ingridients
+</button>
 
+<div data-modal3 class="backdrop3 is-hidden3">
+    <div class="modal3">
+        <button data-modal3-close3 type="button" class="modal__button--close3">
+            <svg class="modal__icon-button" width="11.11" height="11.06">
+                <use href="./images/symbol-defs.svg#icon-modalclose"></use>
+            </svg>
+        </button>
+        <h2 class="modal__title modal__title--ingridients">Chololate <br /> icecream</h2>
+        <div class="circle__img">
+            <img class="picture__chololate" src="./images/ChololateM132x132.jpg" alt="Chololate" width="132"
+                height="132">
+        </div>
+        <ul class="components">
+            <li class="components__weight">
+                <div class="components__circle">
+                    <p class="components__number">320</p>
+                </div>
+                <p class="components__desc">kcal</p>
+            </li>
+            <li class="components__weight">
+                <div class="components__circle">
+                    <p class="components__number">4g</p>
+                </div>
+                <p class="components__desc">Prote...</p>
+            </li>
+            <li class="components__weight">
+                <div class="components__circle">
+                    <p class="components__number">8,2g</p>
+                </div>
+                <p class="components__desc">Fats</p>
+            </li>
+            <li class="components__weight">
+                <div class="components__circle">
+                    <p class="components__number">40,4g</p>
+                </div>
+                <p class="components__desc">Carbs</p>
+            </li>
+        </ul>
 
-<div class="modal modal--ingridients" data-modal="1">
+        <h3 class="title__ingredients">Ingredients</h3>
+        <div class="ingredients">
+            <div class="ingredients__title">
+                <ul class="ingredients__list">
+                    <li class="ingredients__list--title">Milk</li>
+                    <li class="ingredients__list--title">Belgian chocolate</li>
+                    <li class="ingredients__list--title">Cream</li>
+                    <li class="ingredients__list--title">Cocoa powder</li>
+                    <li class="ingredients__list--title">Sugar</li>
+                    <li class="ingredients__list--title">Vanilla sugar</li>
+                </ul>
+            </div>
+            <div class="ingredients__number">
+                <ul class="ingredients__weight">
+                    <li class="ingredients__weight--number">100ml</li>
+                    <li class="ingredients__weight--number">20g</li>
+                    <li class="ingredients__weight--number">150 ml</li>
+                    <li class="ingredients__weight--number">30g</li>
+                    <li class="ingredients__weight--number">40g</li>
+                    <li class="ingredients__weight--number">10g</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="overlay-modal js-overlay-modal"></div>
-    <!--   Svg иконка для закрытия окна  -->
-    <svg class="modal__cross js-modal-close"">
-        <use href=" ./images/symbol-defs.svg#icon-card-_close20x20"></use>
-    </svg>
-    <h2 class="modal__title--ingridients">Chololate <br /> icecream</h2>
-    <div class="circle__img">
-        <img class="picture__chololate" src="./images/ChololateM132x132.jpg" alt="Chololate" width="132" height="132">
+        <form class="form___ingridients" autocomplete="on">
+            <div class="form__group--ingridients">
+                <input class="form__field--ingridients" type="text" pattern="[A-Za-z]{2,15}"
+                    title="Username must be upper or lower case letters" placeholder="Name" required name="user-name"
+                    id="user-name" />
+                <label class="form__label--ingridients" for="user-name"></label>
+            </div>
+
+            <div class="form__group--ingridients">
+                <input class="form__field--ingridients" type="tel" placeholder="Phone" name="tel" id="tel" required
+                    pattern="[0-9]{5,10}" title="Number must be 5 - 10 digits" />
+                <label class="form__label--ingridients" for="tel"></label>
+            </div>
+
+            <div class="form__coment--ingridients">
+                <textarea class="form__textarea--ingridients" placeholder="Comment" name="comment" rows="5"></textarea>
+                <label class="form__textarea-label--ingridients"></label>
+            </div>
+
+            <button class="btn__colored" type="submit">Submit</button>
+        </form>
+
     </div>
-    <ul class="components">
-        <li class="components__weight">
-            <div class="components__circle">
-                <p class="components__number">320</p>
-            </div>
-            <p class="components__desc">kcal</p>
-        </li>
-        <li class="components__weight">
-            <div class="components__circle">
-                <p class="components__number">4g</p>
-            </div>
-            <p class="components__desc">Prote...</p>
-        </li>
-        <li class="components__weight">
-            <div class="components__circle">
-                <p class="components__number">8,2g</p>
-            </div>
-            <p class="components__desc">Fats</p>
-        </li>
-        <li class="components__weight">
-            <div class="components__circle">
-                <p class="components__number">40,4g</p>
-            </div>
-            <p class="components__desc">Carbs</p>
-        </li>
-    </ul>
-
-    <h3 class="title__ingredients">Ingredients</h3>
-    <div class="ingredients">
-        <div class="ingredients__title">
-            <ul class="ingredients__list">
-                <li class="ingredients__list--title">Milk</li>
-                <li class="ingredients__list--title">Belgian chocolate</li>
-                <li class="ingredients__list--title">Cream</li>
-                <li class="ingredients__list--title">Cocoa powder</li>
-                <li class="ingredients__list--title">Sugar</li>
-                <li class="ingredients__list--title">Vanilla sugar</li>
-            </ul>
-        </div>
-        <div class="ingredients__number">
-            <ul class="ingredients__weight">
-                <li class="ingredients__weight--number">100ml</li>
-                <li class="ingredients__weight--number">20g</li>
-                <li class="ingredients__weight--number">150 ml</li>
-                <li class="ingredients__weight--number">30g</li>
-                <li class="ingredients__weight--number">40g</li>
-                <li class="ingredients__weight--number">10g</li>
-            </ul>
-        </div>
-    </div>
-
-    <form class="form___ingridients" autocomplete="on">
-        <div class="form__group--ingridients">
-            <input class="form__field--ingridients" type="text" pattern="[A-Za-z]{2,15}"
-                title="Username must be upper or lower case letters" placeholder="Name" required name="user-name"
-                id="user-name" />
-            <label class="form__label--ingridients" for="user-name"></label>
-        </div>
-
-        <div class="form__group--ingridients">
-            <input class="form__field--ingridients" type="tel" placeholder="Phone" name="tel" id="tel" required
-                pattern="[0-9]{5,10}" title="Number must be 5 - 10 digits" />
-            <label class="form__label--ingridients" for="tel"></label>
-        </div>
-
-        <div class="form__coment--ingridients">
-            <textarea class="form__textarea--ingridients" placeholder="Comment" name="comment" rows="5"></textarea>
-            <label class="form__textarea-label--ingridients"></label>
-        </div>
-
-        <button class="btn__colored" type="submit">Submit</button>
-    </form>
-
-    <!-- Подложка под модальным окном -->
-    <div class="overlay-modal js-overlay-modal"></div>
 </div>

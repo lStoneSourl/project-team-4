@@ -60,7 +60,7 @@
     width: 85px;
     height: 85px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--extrabackgroundColor);
 
     @media screen and (min-width: 768px) and  (max-width: 1199px) {
         display: flex;
@@ -69,7 +69,7 @@
         width: 84px;
         height: 84px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: var(--extrabackgroundColor);
     }
 }
 
@@ -106,7 +106,7 @@
     margin-top: 32px;
     width: 280px;
     height: 256px;
-    background-color: #84A178;;
+    background-color: var(--backgroundColor);
     border-radius: 10px;
 
     @media screen and (min-width: 768px) {
@@ -143,7 +143,7 @@
     font-size: 12px;
     line-height: 255%;
 
-    color: #FCFCFC;
+    color: var(--extrabackgroundColor);
     
     @media screen and (min-width: 768px) and  (max-width: 1199px) {
         font-family: 'Montserrat';
@@ -193,7 +193,7 @@
 
     text-align: center;
 
-    color: #131313;
+    color: var(--primaryColor);
 }
 
 .swiper-slide img {

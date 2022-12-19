@@ -1,6 +1,6 @@
 .menu-container {
      display: none;
-     
+
     position: absolute;
     top: 0;
     left: 0;
@@ -20,6 +20,10 @@
       transition: transform 4350ms ease-in-out;
 
 
+     }
+
+     &.is-open {
+      display: block;
      }
 
      @media screen and (min-width: 768px) {
@@ -90,7 +94,8 @@
 
   }
   .menu__btn {
-   display: flex;
+    // display: flex;
+
 
    @media screen and (min-width: 768px) {
         display: none;

@@ -1,22 +1,20 @@
-/* Стили для подложки */
-.overlay-modal {
-    z-index: 100;
-}
-.modal {
-    z-index: 500;
+.modal5 {
+    padding: 28px;
     border-radius: 10px;
-    background: #FFFFFF;
-    @media screen and (min-width:480) {
+    border: 2px solid #F8D24E;
+    background: var(--extrabackgroundColor);
+    overflow: visible;
+
+    @media screen and (min-width: 480px) {
         max-width: 568px;
     }
+
+    @media screen and (min-width: 768px) {
+        padding: 32px 60px;
+    }
+
 }
-// .html5-video-container {
-//     text-align: center;
-// }
-.modal__title {
-    font-size: 16px;
-    line-height: calc(24 / 16);
-}
+
 
 .recipe {
     margin-top: 20px;
@@ -41,7 +39,7 @@
     text-align: start;
     font-size: 20px;
     line-height: 110%;
-    color: #000000;
+    color: var(--primaryColor);
     list-style-type: decimal
 }
 

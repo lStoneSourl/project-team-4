@@ -1,5 +1,6 @@
 .hero {
     background-color: var(--backgroundColor);
+    overflow: hidden;
 
 }
 
@@ -152,7 +153,6 @@
     font-size: 12px;
     line-height: 140%;
 
-
     @media screen and (min-width: 768px) {
         display: block;
     }
@@ -163,6 +163,12 @@
         left:  256px;
         bottom: 103px;
     }
+
+    animation-name: descrMotion;
+    animation-duration: 1s;
+    animation-timing-function: var(--transitionTimingFunction);
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
 }
 
 .dish-description_arrow {
@@ -253,5 +259,33 @@
 
     @media screen and (min-width: 1200px) {
         left: 652px;
+    }
+
+    animation-name: imageMotion;
+    animation-duration: 1.5s;
+    animation-timing-function: var(--transitionTimingFunction);
+    animation-delay: 0s;
+}
+
+@keyframes imageMotion {
+    0% {
+      transform: translateY(100%);
+      opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes descrMotion {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0%;
+    }
+    80% {
+      transform: translateX(0%);
+      opacity: 100%;
     }
 }

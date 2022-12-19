@@ -1,0 +1,304 @@
+.overlay-modal {
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+
+.container__modal {
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+    /*  Установаем ширину окна  */
+    max-width: 88%;
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    background: #FFFFFF;
+    /* Должен быть выше чем у подложки*/
+    /*  Побочные стили   */
+    text-align: center;
+    padding: 28px 20px;
+    border: 2px solid #F8D24E;
+
+    @media screen and (min-width: 480px) {
+        max-width: 568px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        padding: 32px 54px;
+    }
+}
+
+
+
+.modal__title {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+}
+.blok__product.blokice {
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.blok__cream {
+    position: relative;
+    margin-bottom: 87px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
+.circle__img--cream {
+    position: relative;
+    width: 132px;
+    height: 139px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+
+}
+
+.picture__cream {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
+
+.picture__title {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.04em;
+    z-index: 110;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.picture__blok {
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    top: 35%;
+    border-top: transparent;
+    z-index: -1;
+
+    width: 132px;
+    height: 136px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.picture__blok--cream {
+    border: 2px solid #96AF8C;
+    
+}
+.picture__blok--coffee {
+    background: #EFD478;
+    border: 2px solid #EFD478;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+}
+
+.picture__blok--milkshake {
+    border: 2px solid #D6936D;
+}
+
+.blok__coffee {
+    position: relative;
+    margin-bottom: 87px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
+.circle__img--coffee {
+    position: relative;
+    width: 132px;
+    height: 139px;
+    margin-bottom: 22px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+
+.picture__coffee {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    
+}
+
+.blok__milkshake {
+    position: relative;
+    margin-bottom: 87px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
+.circle__img--milkshake {
+    position: relative;
+    width: 132px;
+    height: 139px;
+    margin-bottom: 22px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+
+}
+
+.picture__milkshake {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
+
+.picture__title--milkshake {
+    margin-bottom: 52px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
+.form__product {
+    width: 100%;
+//    margin-bottom: 26px;
+
+    @media screen and (min-width: 480px) {
+        max-width: 368px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        
+    }
+}
+
+
+.form__field--product {
+    display: block;
+    width: 100%;
+    height: 32px;
+    margin-bottom: 12px;
+
+    padding: 8px 48px 12px 8px;
+    background: rgba(248, 210, 78, 0.1);
+    border-radius: 10px;
+
+    @media screen and (min-width: 768px) {
+        width: 368px;
+        height: 42px;
+        margin-bottom: 16px;
+        padding-left: 16px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+}
+
+.form__field--product::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #131313;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.form__field--product:placeholder-shown {
+    border: 1px solid #84A178;
+}
+
+.form__field--product:not(:placeholder-shown) {
+    border-color: #2196f3;
+}
+
+
+.form__coment--product {
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+}
+
+.form__textarea--product {
+    display: block;
+    width: 100%;
+    height: 65px;
+    padding: 8px 48px 40px 12px;
+    
+    background: rgba(248, 210, 78, 0.1);
+    border-radius: 10px;
+    resize: none;
+
+    @media screen and (min-width: 768px) {
+        height: 84px;
+        padding-top: 11px;
+        padding-left: 16px;
+    }
+}
+.form__textarea--product::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #131313;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.form__textarea--product:placeholder-shown {
+    border: 1px solid #84A178;
+}
+
+.form__textarea--product:not(:placeholder-shown) {
+    border-color: #2196f3;
+}
+

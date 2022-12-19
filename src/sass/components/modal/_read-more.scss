@@ -1,0 +1,50 @@
+/* Стили для подложки */
+.overlay-modal {
+    z-index: 100;
+}
+.modal {
+    z-index: 500;
+    border-radius: 10px;
+    background: #FFFFFF;
+    @media screen and (min-width:480) {
+        max-width: 568px;
+    }
+}
+// .html5-video-container {
+//     text-align: center;
+// }
+.modal__title {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+}
+
+.recipe {
+    margin-top: 20px;
+    background: linear-gradient(90deg, #00d5ff74 0%, #92fed576 100%);
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+.recipe__title {
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.recipe__list {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.recipe__ingredients {
+    margin-bottom: 10px;
+    text-align: start;
+    font-size: 20px;
+    line-height: 110%;
+    color: #000000;
+    list-style-type: decimal
+}
+
+.recipe__ingredients:last-child {
+    margin-bottom: 0;
+}

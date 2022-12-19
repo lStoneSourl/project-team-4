@@ -1,36 +1,4 @@
-li {
-    list-style-type: none;
-    margin: 0;
-}
-ul {
-    margin: 0px;
-    padding-left: 0px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0px;
-}
-p {
-    margin: 0px;
-}
-img {
-    display: block;
-    max-width: 100%;
-    z-index: 0;
-}
-a{
-    text-decoration: none;
-    }
-    a:hover{
-    text-decoration: none;
-    }
-    a:active{
-    text-decoration: none;
-}
+
 .goods {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -392,7 +360,7 @@ a{
 .three-product {
     margin-bottom: 62px;
     @media screen and (min-width: 768px) {
-        margin-bottom: 75px;
+        margin-bottom: 50px;
     }
     @media screen and (min-width: 1200px){
         margin-bottom: 50px;

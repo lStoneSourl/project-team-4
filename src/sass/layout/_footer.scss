@@ -175,6 +175,12 @@
     font-size: 12px;
     line-height: calc(22 / 12);
     color: #FFFFFF;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: var(--accentColor);
+    }
       
   }
   @media screen and (min-width: 768px) {

@@ -1,5 +1,5 @@
 .menu-container {
-    // display: none;
+     display: none;
     
     position: absolute;
     top: 0;
@@ -10,6 +10,10 @@
     
      height: 100vh;
      width: 100vw;
+
+     &.is-open {
+      display: block;
+     }
 
      @media screen and (min-width: 768px) {
         padding: 25px 28px;
@@ -79,7 +83,8 @@
 
   }
   .menu__btn {
-   display: flex;
+    // display: flex;
+
 
    @media screen and (min-width: 768px) {
         display: none;

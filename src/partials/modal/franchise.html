@@ -1,47 +1,50 @@
-<button type="button" class="js-open-modal5" data-modal="5"> Открити Product card></button>
+<button data-modal2-open2 type="button" class="franchise">
+    franchise
+</button>
 
-<!-- Несколько модальных окон -->
+<div data-modal2 class="backdrop2 is-hidden2">
+    <div class="modal2">
+        <button data-modal2-close2 type="button" class="modal__button--close2">
+            <svg class="modal__icon-button" width="11.11" height="11.06">
+                <use href="./images/symbol-defs.svg#icon-modalclose"></use>
+            </svg>
+        </button>
 
-<div class="modal container__modal--review" data-modal="5">
-    <!--   Svg иконка для закрытия окна  -->
-    <svg class="modal__cross js-modal-close5" 5">
-        <use href=" ./images/symbol-defs.svg#icon-card-_close20x20"></use>
-    </svg>
-    <h2 class="review__title">Thank you for your interest in owning an Ice Cream shop</h2>
-    <p class="review__slogan">Due to the overwhelming volume of franchise requests we are not accepting new franchisee
-        applications at this
-        time. Once
-        the application process resumes, we will contact you for further information. Please fill out the contact
-        information
-        below and we will reach out for additional information. We appreciate &nbsp; your patience.</p>
+        <h2 class="modal__title review__title">Thank you for your interest in owning an Ice Cream shop</h2>
+        <p class="review__slogan">Due to the overwhelming volume of franchise requests we are not accepting new
+            franchisee
+            applications at this
+            time. Once
+            the application process resumes, we will contact you for further information. Please fill out the contact
+            information
+            below and we will reach out for additional information. We appreciate your patience.</p>
 
-    <form class="form" autocomplete="on">
-        <div class="form__group">
-            <input class="form__field" type="text" required name="user-name" id="user-name" />
-            <label class="form__label" for="user-name">Name</label>
-        </div>
+        <form class="form--review" autocomplete="on">
+            <div class="form__group--review">
+                <input class="form__field--review" type="text" placeholder="Name" required name="user-name"
+                    pattern="[A-Za-z]{2,15}" title="Username must be upper or lower case letters" id="user-name" />
+                <label class="form__label--review" for="user-name"></label>
+            </div>
 
-        <div class="form__group">
-            <input class="form__field" type="tel" name="tel" id="tel" required minlength="6" maxlength="12" />
-            <label class="form__label" for="tel">Phone
+            <div class="form__group--review">
+                <input class="form__field--review" type="tel" placeholder="Phone" name="tel" id="tel" required
+                    pattern="[0-9]{5,10}" title="Number must be 5 - 10 digits" />
+                <label class="form__label--review" for="tel"></label>
+            </div>
 
-            </label>
-        </div>
+            <div class="form__group--review">
+                <input class="form__field--review" type="Email" placeholder="Email" name="Email" id="Email" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}"
+                    title="Enter your email in the format hero2231@gmail.com" />
+                <label class="form__label--review" for="tel"></label>
+            </div>
 
-        <div class="form__group">
-            <input class="form__field" type="Email" name="Email" id="Email" required minlength="6" maxlength="12" />
-            <label class="form__label" for="tel">Email</label>
-        </div>
+            <div class="form__coment--review">
+                <textarea class="form__textarea--review" placeholder="Comment" name="comment" rows="3"></textarea>
+                <label class="form__textarea-label--review"></label>
+            </div>
+            <button class="btn__colored" type="submit">Submit</button>
+        </form>
 
-        <div class="form__coment">
-            <textarea class="form__textarea" name="comment" rows="3"></textarea>
-            <label class="form__textarea-label list">Comment</label>
-        </div>
-
-        <button class="btn__colored" type="submit">Submit</button>
-    </form>
+    </div>
 </div>
-<div class="overlay-modal5 js-overlay-modal5"></div>
-<!-- Подложка под модальным окном -->
-<div class="overlay-modal5 js-overlay-modal5"></div>
-<script src="./js/modal5.js" type="module"></script>

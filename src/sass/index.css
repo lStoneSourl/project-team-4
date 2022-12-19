@@ -1730,7 +1730,7 @@ ul, li {
 }
 @media screen and (max-width: 768px) {
   .contacts-tel-post {
-    ax-width: 151px;
+    max-width: 151px;
     max-height: 46px;
     margin-top: 116px;
   }

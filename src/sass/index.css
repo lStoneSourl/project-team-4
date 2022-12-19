@@ -1230,7 +1230,7 @@ p {
   color: #131313;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
   .contacts-section {
     display: flex;
     align-items: center;
@@ -1269,7 +1269,7 @@ ul, li {
   list-style: none;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
   .contacts-container {
     display: flex;
     flex-direction: column;
@@ -1321,7 +1321,7 @@ ul, li {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
   .contacts-title {
     font-family: Montserrat;
     font-weight: 500;
@@ -1381,7 +1381,7 @@ ul, li {
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
   .contacts-title-foodtruck {
     font-family: Montserrat;
     font-weight: 500;
@@ -1441,7 +1441,7 @@ ul, li {
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
   .contacts-menu-town {
     font-family: Montserrat;
     font-style: normal;
@@ -1482,7 +1482,7 @@ ul, li {
   list-style: none;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
   .contacts-menu-adress {
     font-family: Montserrat;
     font-weight: 500;
@@ -1521,7 +1521,7 @@ ul, li {
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
   .contacts-opening-hours {
     font-family: Montserrat;
     font-weight: 500;
@@ -1691,7 +1691,7 @@ ul, li {
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
   .contacts-schedule-working > span {
     font-family: Montserrat;
     font-weight: 500;
@@ -1721,7 +1721,7 @@ ul, li {
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
   .contacts-tel-post {
     max-width: 130px;
     max-height: 44px;
@@ -1743,7 +1743,7 @@ ul, li {
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
   .contacts-post,
 .contacts-tel {
     font-family: Montserrat;

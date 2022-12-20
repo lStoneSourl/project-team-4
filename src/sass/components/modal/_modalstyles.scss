@@ -2,12 +2,14 @@
 .modal2,
 .modal3,
 .modal4,
-.modal5 {
+.modal5,
+.modal7,
+.modal8 {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 88%;
-    transform: translate(-50%, -50%);
+
+    transform: translate(-50%, -46%);
     z-index: 300;
   
     text-align: center;
@@ -21,7 +23,9 @@
 .modal__button--close2,
 .modal__button--close3,
 .modal__button--close4,
-.modal__button--close5 {
+.modal__button--close5,
+.modal__button--close7,
+.modal__button--close8 {
     position: absolute;
     right: 16.48px;
     top: 16.44px;

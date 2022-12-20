@@ -111,7 +111,65 @@
 
   }
   .menu__btn {
-    display: flex;
+    // display: flex;
+
+    position: relative;
+    width: 152px;
+    min-width: 152px;
+    min-height: 40px;
+    padding: 10px 33px;
+  
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    color: #000000;
+  
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  
+    background-color: var(--accentColor);
+  
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
+  
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  
+    &:hover,
+    &:focus {
+      background-color: var(--btn-hoverColor);
+    }
+    &:focus {
+      outline: none;
+      color: var(--extrabackgroundColor);
+  
+      background-color: var(--btn-hoverColor);
+  
+      &::after {
+        transition: all var(--transitionDuration) var(--transitionTimingFunction);
+        content: '—';
+        color: transparent;
+        background: url(../images/but/arrow-w.svg) no-repeat right center;
+      }
+    }
+    &:disabled {
+      outline: none;
+      color: var(--primaryColor);
+      border-color: var(--btn-disabledColor);
+      background-color: var(--btn-disabledColor);
+      cursor: initial;
+    }
+    &::after {
+      transition: all var(--transitionDuration) var(--transitionTimingFunction);
+      content: '—';
+      color: transparent;
+      background: url(../images/but/arrow-b.svg) no-repeat right center;
+      margin-left: 4px;
+    }
  
     animation-duration: 250ms;
     animation-timing-function: var(--transitionTimingFunction);

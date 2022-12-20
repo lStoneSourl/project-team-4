@@ -121,6 +121,7 @@
     
     &:hover,
     &:focus {
+      outline: none;
       .footer__social-icon {
         fill: #ffffff;
       }

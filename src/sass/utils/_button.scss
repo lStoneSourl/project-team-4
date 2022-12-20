@@ -20,9 +20,7 @@
   overflow: hidden;
   cursor: pointer;
 
-  transition-property: background-color, color, border-color;
-    transition-duration: var(--transitionDuration);
-    transition-timing-function: var(--transitionTimingFunction);
+  transition: all var(--transitionDuration) var(--transitionTimingFunction);
 
 
   &:hover,
@@ -72,9 +70,7 @@
   overflow: hidden;
   cursor: pointer;
 
-    transition-property: background-color, color;
-    transition-duration: var(--transitionDuration);
-    transition-timing-function: var(--transitionTimingFunction);
+  transition: all var(--transitionDuration) var(--transitionTimingFunction);
 
   &:hover,
   &:focus {
@@ -120,9 +116,7 @@
   overflow: hidden;
   cursor: pointer;
 
-  transition-property:  color;
-  transition-duration: var(--transitionDuration);
-  transition-timing-function: var(--transitionTimingFunction);
+  transition: all var(--transitionDuration) var(--transitionTimingFunction);
 
   &:hover   {
     
@@ -169,9 +163,7 @@
  
   background-color: var(--accentColor);
   
-  transition-property: background-color, color;
-  transition-duration: var(--transitionDuration);
-  transition-timing-function: var(--transitionTimingFunction);
+  transition: all var(--transitionDuration) var(--transitionTimingFunction);
 
   &:hover,
   &:focus {
@@ -184,6 +176,7 @@
       background-color: var(--btn-hoverColor);
 
       &::after {
+        transition: all var(--transitionDuration) var(--transitionTimingFunction);
         content: '—';
       color: transparent;
       background: url(../images/but/arrow-w.svg) no-repeat right center;
@@ -197,6 +190,7 @@
       cursor: initial;
     }  
     &::after {
+      transition: all var(--transitionDuration) var(--transitionTimingFunction);
       content: '—';
       color: transparent;
       background: url(../images/but/arrow-b.svg) no-repeat right center;
@@ -227,9 +221,7 @@
   overflow: hidden;
   cursor: pointer;
   
-  transition-property: background-color, color, border-color;
-  transition-duration: var(--transitionDuration);
-  transition-timing-function: var(--transitionTimingFunction);
+  transition: all var(--transitionDuration) var(--transitionTimingFunction);
 
   &:hover,
   &:focus {
@@ -241,6 +233,7 @@
       color: var(--extrabackgroundColor);
 
       &::after {
+        transition: all var(--transitionDuration) var(--transitionTimingFunction);
         content: '—';
       color: transparent;
       background: url(../images/but/arrow-w.svg) no-repeat right center;
@@ -253,6 +246,7 @@
       cursor: initial;
     } 
   &::after {
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
     content: '—';
     color: transparent;
     background: url(../images/but/arrow-b.svg) no-repeat right center;
@@ -284,9 +278,7 @@
 
   background-color: var(--accentColor);
 
-    transition-property: background-color, color;
-    transition-duration: var(--transitionDuration);
-    transition-timing-function: var(--transitionTimingFunction);
+  transition: all var(--transitionDuration) var(--transitionTimingFunction);
   
   @media screen and (min-width: 768px) {
     display: block;
@@ -304,6 +296,7 @@
       background-color: var(--btn-hoverColor);
 
       &::after {
+        transition: all var(--transitionDuration) var(--transitionTimingFunction);
         content: '—';
       color: transparent;
       background: url(../images/but/arrow-w.svg) no-repeat right center;
@@ -317,6 +310,7 @@
       cursor: initial;
     }  
     &::after {
+      transition: all var(--transitionDuration) var(--transitionTimingFunction);
       content: '—';
       color: transparent;
       background: url(../images/but/arrow-b.svg) no-repeat right center;
@@ -416,9 +410,7 @@
     background-color: var(--accentColor);
   
    
-    transition-property: background-color, color;
-    transition-duration: var(--transitionDuration);
-    transition-timing-function: var(--transitionTimingFunction);
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
   
     &:hover,
     &:focus {
@@ -431,6 +423,7 @@
         background-color: var(--btn-hoverColor);
 
         &::after {
+          transition: all var(--transitionDuration) var(--transitionTimingFunction);
           content: '—';
           color: transparent;
           background: url(../images/but/arrow-w.svg) no-repeat right center ;  
@@ -445,6 +438,7 @@
         cursor: initial;
       }
     &::after {
+      transition: all var(--transitionDuration) var(--transitionTimingFunction);
       content: '—';
       color: transparent;
       background: url(../images/but/arrow-b.svg) no-repeat right center ;

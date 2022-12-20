@@ -1,6 +1,6 @@
 .menu-container {
-  display: none;
-//  opacity: 0;
+  // display: none;
+  opacity: 0;
     
     position: absolute;
     top: 0;
@@ -12,14 +12,17 @@
      height: 100vh;
      width: 100vw;
     
-     transition: 2s cubic-bezier(.86,3.57,.29,1.9);
+     
      transform: translateX(100%);
+    //  transition: 2s cubic-bezier(.86,3.57,.29,1.9);
 
      &.is-open {
-        display: block;
+        // display: block;
       opacity: 1;
       transform: translateX(0%);
-      transition: all var(--transitionDuration) var(--transitionTimingFunction);
+      
+  transition: all var(--transitionDuration) var(--transitionTimingFunction);
+
 
      }
 

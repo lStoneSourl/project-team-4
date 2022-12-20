@@ -60,7 +60,7 @@
     width: 85px;
     height: 85px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--extrabackgroundColor);
 
     @media screen and (min-width: 768px) and  (max-width: 1199px) {
         display: flex;
@@ -69,23 +69,30 @@
         width: 84px;
         height: 84px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: var(--extrabackgroundColor);
     }
 }
 
 .gallery__big {
-    display: block;
-    width: 100vw;
-    margin-bottom: 80px;
-    border-radius: 30px;
+    @media screen and (max-width: 767px) {
+        display: block;
+        width: 100vw;
+        margin-bottom: 80px;
+        border-radius: 10px;
+    }
+    
 
     @media screen and (min-width: 768px) {
         width: 704px;
         height: 327px;
+        border-radius: 16px;
+        margin-bottom: 100px;
     }
     @media screen and (min-width: 1200px) {
         width: 1013px;
         height: 422px;
+        border-radius: 26px;
+        margin-bottom: 140px;
     }
 }
 .gallery__smail {
@@ -99,7 +106,7 @@
     margin-top: 32px;
     width: 280px;
     height: 256px;
-    background-color: #84A178;;
+    background-color: var(--backgroundColor);
     border-radius: 10px;
 
     @media screen and (min-width: 768px) {
@@ -123,10 +130,12 @@
 
 .gallery__text {
     
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        padding: 35px 40px;
+    }
     
     
-    position: absolute;
-    padding: 35px 40px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -134,7 +143,7 @@
     font-size: 12px;
     line-height: 255%;
 
-    color: #FCFCFC;
+    color: var(--extrabackgroundColor);
     
     @media screen and (min-width: 768px) and  (max-width: 1199px) {
         font-family: 'Montserrat';
@@ -144,22 +153,35 @@
         line-height: 186%;
         
         
-        padding-left: 99px;
-        padding-right: 99px;
+        padding-left: 80px;
+        padding-right: 80px;
         padding-top: 28px;
         padding-bottom: 29px;
+
+        text-align: center;
+        letter-spacing: 0.04em;
     }
     @media screen and (min-width: 1200px) {
-        flex-basis: 20%;
-        padding-left: 120px;
-        padding-right: 120px;
-        padding-top: 42px;
-        padding-bottom: 42px;
+        padding-top: 43px;
+        padding-bottom: 43px;
+        padding-right: 109px;
+        padding-left: 109px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 186%;
+/* or 30px */
+
+        text-align: center;
+        letter-spacing: 0.04em;
+        
     }
     
 }
 .gallery__title {
-    padding-bottom: 45px;
+    padding-bottom: 32px;
     
 
     font-family: 'Montserrat';
@@ -171,7 +193,7 @@
 
     text-align: center;
 
-    color: #131313;
+    color: var(--primaryColor);
 }
 
 .swiper-slide img {

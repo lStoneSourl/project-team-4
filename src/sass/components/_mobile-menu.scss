@@ -1,6 +1,6 @@
 .menu-container {
-     display: none;
-     
+// display: none;
+opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -10,16 +10,14 @@
     
      height: 100vh;
      width: 100vw;
-     
-     transform: translateX(110%);
-     
- 
+    
+     transition: 2s cubic-bezier(.86,3.57,.29,1.9);
+     transform: translateX(100%);
 
      &.is-open {
-      display: block;
+      // display: block;
+      opacity: 1;
       transform: translateX(0);
-      transition: transform 4350ms ease-in-out;
-
 
      }
 
@@ -91,7 +89,8 @@
 
   }
   .menu__btn {
-   display: flex;
+    // display: flex;
+
 
    @media screen and (min-width: 768px) {
         display: none;
@@ -104,7 +103,7 @@
     border: 0;
     background-color: transparent;
     cursor: pointer;
-    transition: color var(--transitionDuration) var(--transitionTimingFunction);
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
     
     
     &:hover,

@@ -2,13 +2,15 @@
 .backdrop2,
 .backdrop3,
 .backdrop4,
-.backdrop5 {
+.backdrop5,
+.backdrop7,
+.backdrop8 {
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 250;
     opacity: 1;
 
     background-color: rgba(0, 0, 0, 0.2);
@@ -19,7 +21,9 @@
 .backdrop2.is-hidden2,
 .backdrop3.is-hidden3,
 .backdrop4.is-hidden4,
-.backdrop5.is-hidden5 {
+.backdrop5.is-hidden5,
+.backdrop7.is-hidden7,
+.backdrop8.is-hidden8 {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;

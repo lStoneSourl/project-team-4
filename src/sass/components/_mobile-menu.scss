@@ -45,6 +45,19 @@
     justify-content: space-between;
 }
 
+.menu-container__link {
+  animation-duration: 250ms;
+  animation-timing-function: var(--transitionTimingFunction);
+
+  &:hover,
+  &:focus {
+    outline: none;
+    fill: #FCFCFC;
+    animation-name: rotate;
+    
+  }
+}
+
 .icecream-logo {
     @media screen and (min-width: 768px) {
        scale: 1.2;
@@ -98,14 +111,22 @@
 
   }
   .menu__btn {
-    // display: flex;
-
-
-   @media screen and (min-width: 768px) {
-        display: none;
+    display: flex;
+ 
+    animation-duration: 250ms;
+    animation-timing-function: var(--transitionTimingFunction);
+  
+    &:hover,
+    &:focus {
+      
+      animation-name: rotate;
+    }
+ 
+    @media screen and (min-width: 768px) {
+         display: none;
+    }
    }
-    
-  }
+
   .menu__closing-btn {
     margin: 0;
     padding: 0;
@@ -130,3 +151,19 @@
     background-color: transparent;
 
   }
+
+   // fun
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

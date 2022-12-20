@@ -342,6 +342,12 @@
 .list-products__arrow {
     width: 40px;
     height: 16px;
+    transform: scale(1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        transform: scale(1.25);
+    }
 }
 .list-products__net:last-child {
     margin-bottom: 0px;

@@ -1,158 +1,71 @@
 
 .gallery {
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
     // mobail
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0 ) 95%, #84A178 5%),url(../images/Backgroud_mobile885x1242.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0 ) 75%, #84A178 25%),url(../images/Backgroud_mobile885x1242.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) { 
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0 ) 95%, #84A178 5%),url(../images/Backgroud_mobile1770x2484@2x.jpg);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0 ) 75%, #84A178 25%),url(../images/Backgroud_mobile1770x2484@2x.jpg);
               
     }
     // tablet
     @media screen and (min-width: 768px) {
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0 ) 87%, #84A178 13%),url(../images/Background_tablet963x1017.jpg);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0 ) 55%, #84A178 45%),url(../images/Background_tablet963x1017.jpg);
     
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0 ) 87%, #84A178 13%),url(../images/Background_tablet1926x2034@2x.jpg);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0 ) 55%, #84A178 45%),url(../images/Background_tablet1926x2034@2x.jpg);
         }
         
         //desctop
         @media screen and (min-width: 1200px) {
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0 ) 90%, #84A178 10%),url(../images/Backgroud_desktop1300x1350.jpg);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0 ) 78%, #84A178 22%),url(../images/Backgroud_desktop1300x1350.jpg);
         
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0 ) 90%, #84A178 10%),url(../images/Backgroud_desktop2600x2700@2x.jpg);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.0 ) 78%, #84A178 22%),url(../images/Backgroud_desktop2600x2700@2x.jpg);
         }
         }
         }
-}
-
-
-.swiper-wrapper {
-    display: none;
-}
-.swiper {
-    display: block;
-    text-align: center;
-    width: 100%;
-    height: 1069px;
-    
-}
-.swiper-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.gallery__img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 85px;
-    height: 85px;
-    border-radius: 50%;
-    background-color: #fff;
 }
 
 .gallery__big {
-    display: block;
-    width: 100vw;
-    margin-bottom: 80px;
-    border-radius: 8px;
+    @media screen and (max-width: 767px) {
+        display: block;
+        width: 100vw;
+        border-radius: 10px;
+    }
+    
 
-    @media screen and (min-width: 768px) {
-        width: 704px;
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+        width: 100%;
         height: 327px;
+        border-radius: 16px;
     }
     @media screen and (min-width: 1200px) {
+        
         width: 1013px;
         height: 422px;
+        border-radius: 26px;
     }
 }
-.gallery__smail {
-    border-radius: 50%;
+.swiper-wrapper {
+    display: none;
 }
 
-.gallery__one {
-    position: relative;
-
-    margin-bottom: 32px;
-    margin-top: 32px;
-    width: 280px;
-    height: 256px;
-    background-color: #84A178;;
-    border-radius: 10px;
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-
-        width: 705px;   
-        height: 138px;
-    }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-
-        width: 968px;   
-        height: 138px;
-    }
+.swiper-slide img {
+    display: block;
+    object-fit: cover;
 }
-.gallery__text {
-    
-    position: absolute;
-    padding: 35px 40px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 255%;
-
-    
-
-    color: #FCFCFC;
-    @media screen and (min-width: 768px) and  (max-width: 1199px) {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 186%;
-        
-        
-        padding-left: 99px;
-        padding-right: 99px;
-        padding-top: 28px;
-        padding-bottom: 29px;
-    }
-    @media screen and (min-width: 1200px) {
-        flex-basis: 20%;
-        padding-left: 120px;
-        padding-right: 120px;
-        padding-top: 42px;
-        padding-bottom: 42px;
-    }
-    
-}
-.gallery__title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 186%;
-
-
-    text-align: center;
-
-    color: #131313;
-}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }

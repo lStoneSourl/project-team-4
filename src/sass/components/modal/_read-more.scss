@@ -1,18 +1,39 @@
-/* Стили для подложки */
-.overlay-modal {
-    z-index: 10;
-}
-.modal {
-    z-index: 20;
+.modal5 {
+    padding: 28px;
     border-radius: 10px;
-    @media screen and (min-width: 1200px) {
-        min-width: 568px;
+    border: 2px solid #F8D24E;
+    background: var(--extrabackgroundColor);
+    overflow: visible;
+
+    @media screen and (min-width: 480px) {
+        max-width: 568px;
     }
+
+    @media screen and (min-width: 768px) {
+        padding: 32px 60px;
+    }
+
 }
-.modal__title {
-    font-size: 16px;
-    line-height: calc(24 / 16);
+
+.iframe {
+    // width: 224px;
+    // height: 190px;
+
+    // @media screen and (min-width: 768px) {
+    //     max-width: 444px;
+        
+    // }
+
+    // @media screen and (min-width: 764px) {
+    //     width: 320px;
+        
+    // }
+    // @media screen and (min-width: 768px) {
+    //     width: 440px;
+        
+    // }
 }
+
 
 .recipe {
     margin-top: 20px;
@@ -37,7 +58,7 @@
     text-align: start;
     font-size: 20px;
     line-height: 110%;
-    color: #000000;
+    color: var(--primaryColor);
     list-style-type: decimal
 }
 

@@ -1,41 +1,45 @@
-<button type="button" class="js-open-modal3" data-modal="3"> Открити How it’s made?></button>
+<!-- <button data-modal5-open5 type="button" class="read-more">
+    read-more
+</button> -->
 
-<!-- Несколько модальных окон -->
+<div data-modal5 class="backdrop5 is-hidden5">
+    <div class="modal5">
+        <button data-modal5-close5 type="button" class="modal__button--close5">
+            <svg class="modal__icon-button" width="11.11" height="11.06">
+                <use href="./images/symbol-defs.svg#icon-modalclose"></use>
+            </svg>
+        </button>
 
-<div class="modal container__modal--product" data-modal="3">
-    <!--   Svg иконка для закрытия окна  -->
-    <svg class="modal__cross js-modal-close3" 3">
-        <use href=" ./images/symbol-defs.svg#icon-card-_close20x20"></use>
-    </svg>
-    <h2 class="modal__title">How it’s made?</h2>
-    <iframe width="500" height="315" src="https://www.youtube.com/embed/JM9VFGXXoVg" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
-    <article class="recipe">
-        <h3 class="recipe__title">Chocolate Ice-cream</h3>
-        <ol class="recipe__list">
-            <li class="recipe__ingredients">Heat up the milk. Beat the egg yolks and sugar in a bowl.</li>
-            <li class="recipe__ingredients">Pour in a little boiling-hot milk, beating all the time, then pour in the
-                rest
-                of the milk and blend.</li>
-            <li class="recipe__ingredients">Return the mixture to the saucepan and leave to thicken, stirring
-                continuously.
-            </li>
-            <li class="recipe__ingredients">Do not allow the cream to boil.</li>
-            <li class="recipe__ingredients">Once it coats the back of the spoon it is cooked. Leave to cool for a while.
-                Add
-                the cocoa and whip the
-                mixture.</li>
-            <li class="recipe__ingredients">Add the fresh cream and whip again.</li>
-            <li class="recipe__ingredients">Leave the cream to cool before pouring into the ice-cream churn for
-                freezing.
-            </li>
-        </ol>
-    </article>
+        <h2 class="modal__title modal__title">How it’s made?</h2>
+        <iframe class="iframe" width="444" height=" 190" src="https://www.youtube.com/embed/B4rcq4RK4nM?start=20"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        <article class="recipe">
+            <h3 class="recipe__title">Chocolate Ice-cream</h3>
+            <ol class="recipe__list">
+                <li class="recipe__ingredients">Heat up the milk. Beat the egg yolks and sugar in a bowl.</li>
+                <li class="recipe__ingredients">Pour in a little boiling-hot milk, beating all the time, then pour
+                    in the
+                    rest
+                    of the milk and blend.</li>
+                <li class="recipe__ingredients">Return the mixture to the saucepan and leave to thicken, stirring
+                    continuously.
+                </li>
+                <li class="recipe__ingredients">Do not allow the cream to boil.</li>
+                <li class="recipe__ingredients">Once it coats the back of the spoon it is cooked. Leave to cool for
+                    a while.
+                    Add
+                    the cocoa and whip the
+                    mixture.
+                </li>
+                <li class="recipe__ingredients">Add the fresh cream and whip again.</li>
+                <li class="recipe__ingredients">Leave the cream to cool before pouring into the ice-cream churn for
+                    freezing.
+                </li>
+            </ol>
+        </article>
 
-    <div class="overlay-modal3 js-overlay-modal3"></div>
-    <!-- Подложка под модальным окном -->
-    <div class="overlay-modal3 js-overlay-modal3"></div>
-    <script src="./js/modal3.js" type="module"></script>
+    </div>
 </div>

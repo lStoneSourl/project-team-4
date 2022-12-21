@@ -8,16 +8,16 @@
     position: fixed;
     top: 50%;
     left: 50%;
-
-    transform: translate(-50%, -46%);
+    transform: translate(-50%, -48%);
     z-index: 300;
-  
     text-align: center;
     border-radius: 10px;
     border: 2px solid #F8D24E;
     background: var(--extrabackgroundColor);
     overflow: visible;
 }
+
+
 
 .modal__button--close1,
 .modal__button--close2,

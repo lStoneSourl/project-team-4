@@ -149,37 +149,38 @@ a:active {
     line-height: 140%;
     color: var(--primaryColor);
 }
-.body {
+body {
     background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-     // mobail
-        background-image: url(../images/Backgroud_mobile885x1242.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 
-        @media screen and (min-device-pixel-ratio: 2),
-         screen and (min-resolution: 192dpi),
-         screen and (min-resolution: 2dppx) { 
-         background-image: url(../images/Backgroud_mobile1770x2484@2x.jpg);
-              
+ // mobail
+    background-image: url(../images/Backgroud_mobile885x1242.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+     screen and (min-resolution: 192dpi),
+     screen and (min-resolution: 2dppx) { 
+     background-image: url(../images/Backgroud_mobile1770x2484@2x.jpg);
+          
+ }
+// tablet
+    @media screen and (min-width: 768px) {
+     background-image: url(../images/Background_tablet963x1017.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/Background_tablet1926x2034@2x.jpg);
+    }
+    
+     //desctop
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/Backgroud_desktop1300x1350.jpg);
      }
-    // tablet
-        @media screen and (min-width: 768px) {
-         background-image: url(../images/Background_tablet963x1017.jpg);
-        }
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url(../images/Background_tablet1926x2034@2x.jpg);
-        }
-        
-         //desctop
-        @media screen and (min-width: 1200px) {
-            background-image: url(../images/Backgroud_desktop1300x1350.jpg);
-         }
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url(../images/Backgroud_desktop2600x2700@2x.jpg);
-        }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/Backgroud_desktop2600x2700@2x.jpg);
+    }
 }

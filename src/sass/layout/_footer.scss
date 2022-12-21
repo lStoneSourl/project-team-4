@@ -121,6 +121,7 @@
     
     &:hover,
     &:focus {
+      outline: none;
       .footer__social-icon {
         fill: #ffffff;
       }
@@ -163,19 +164,37 @@
     }
   
   }
-  .footer__contacts-phone {
+  // .footer__contacts-phone {
+  //   display: block;
+  //   color: #FFFFFF;
+  //   margin-left: 4px;
+  // }
+  .footer__tel {
     display: block;
     color: #FFFFFF;
     margin-left: 4px;
-  }
-  .footer__tel {
     text-decoration: none;
     font-weight: 700;
     font-size: 12px;
     line-height: calc(22 / 12);
     color: #FFFFFF;
-      
+
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
+
+    animation-duration: 250ms;
+    animation-timing-function: var(--transitionTimingFunction);
+  
+
+    &:hover,
+    &:focus {
+      animation-name: rotate;
+      transition: all var(--transitionDuration) var(--transitionTimingFunction);
+      outline: none;
+      color: var(--accentColor);
+
+    }
   }
+
   @media screen and (min-width: 768px) {
     .footer__contacts-text,
     .footer__tel {

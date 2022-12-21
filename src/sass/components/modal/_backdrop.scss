@@ -12,7 +12,8 @@
     left: 0;
     z-index: 250;
     opacity: 1;
-
+    // overflow-y: scroll;
+    overflow-x: hidden;
     background-color: rgba(0, 0, 0, 0.2);
     // transition: opacity $transition, visibility $transition;
 }
@@ -26,5 +27,6 @@
 .backdrop8.is-hidden8 {
     opacity: 0;
     pointer-events: none;
-    visibility: hidden;
+    // visibility: hidden;
+    
 }

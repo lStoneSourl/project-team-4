@@ -24,6 +24,7 @@
   &:hover,
   &:focus {
     border-color: var(--btn-hoverColor);
+    animation: rotate 250ms var(--transitionTimingFunction) ;
   }
   &:focus {
     outline: none;
@@ -69,6 +70,7 @@
   &:hover,
   &:focus {
     background-color: var(--btn-hoverColor);
+    animation: rotate 250ms var(--transitionTimingFunction) ;
   }
   &:focus {
     outline: none;
@@ -110,10 +112,12 @@
 
   &:hover {
     color: var(--btn-hoverColor);
+    animation: rotate 250ms var(--transitionTimingFunction) ;
   }
   &:focus {
     outline: none;
     color: var(--extrabackgroundColor);
+    animation: rotate 250ms var(--transitionTimingFunction) ;
   }
   &:disabled {
     outline: none;
@@ -155,6 +159,7 @@
   &:hover,
   &:focus {
     background-color: var(--btn-hoverColor);
+    animation: rotate 250ms var(--transitionTimingFunction) ;
   }
   &:focus {
     outline: none;
@@ -209,6 +214,7 @@
   &:hover,
   &:focus {
     border-color: var(--btn-hoverColor);
+    animation: rotate 250ms var(--transitionTimingFunction) ;
   }
   &:focus {
     outline: none;
@@ -267,6 +273,7 @@
   &:hover,
   &:focus {
     background-color: var(--btn-hoverColor);
+    animation: rotate 250ms var(--transitionTimingFunction) ;
   }
   &:focus {
     outline: none;
@@ -329,6 +336,7 @@
   &:hover,
   &:focus {
     background-color: var(--btn-hoverColor);
+    animation: rotate 250ms var(--transitionTimingFunction) ;
   }
   &:focus {
     outline: none;
@@ -387,6 +395,7 @@
   &:hover,
   &:focus {
     background-color: var(--btn-hoverColor);
+    animation: rotate 250ms var(--transitionTimingFunction) ;
   }
   &:focus {
     outline: none;
@@ -445,6 +454,7 @@
   &:hover,
   &:focus {
     background-color: var(--btn-hoverColor);
+    animation: rotate 250ms var(--transitionTimingFunction) ;
   }
   &:focus {
     outline: none;

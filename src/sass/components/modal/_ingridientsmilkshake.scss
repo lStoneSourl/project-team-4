@@ -1,5 +1,39 @@
+.backdrop8 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 250;
+  opacity: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 1s ease 0s;
+  // visibility: visible;
+}
+
+.backdrop8.is-hidden8 {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 1s ease 0s;
+  transform: perspective(600px) translate(100%, 0px) rotatey(45deg);
+}
+
+
 .modal8 {
   padding: 28px 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+  z-index: 300;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #F8D24E;
+  background: var(--extrabackgroundColor);
+  overflow: visible;
 
   @media screen and (min-width: 480px) {
     max-width: 568px;

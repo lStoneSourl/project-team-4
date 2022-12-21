@@ -3,48 +3,47 @@
 </button> -->
 
 <div data-modal1 class="backdrop1 is-hidden1">
-  <div class="modal1">
+  <div class="modal1 modal1__product">
     <button data-modal1-close1 type="button" class="modal__button--close1">
       <svg class="modal__icon-button" width="11.11" height="11.06">
         <use href="./images/symbol-defs.svg#icon-modalclose"></use>
       </svg>
     </button>
+
+
     <h2 class="modal__title modal__title--cream">Buy now</h2>
     <div class="blok__product blokice">
       <div class="blok__cream">
         <div class="circle__img--cream">
           <img class="picture__cream" srcset="
-                          ./images/icecreamMTD132x132.jpg 1x
-                          ./images/icecreamMTD264x264@2x.jpg 2x 
-                          " src=" ./images/icecreamMTD132x132.jpg" alt="ice cream" sizes="132" />
+                              ./images/icecreamMTD132x132.jpg 1x
+                              ./images/icecreamMTD264x264@2x.jpg 2x
+                              " src=" ./images/icecreamMTD132x132.jpg" alt="ice cream" sizes="132" />
         </div>
         <h3 class="picture__title">ice cream</h3>
         <div class="picture__blok picture__blok--cream"></div>
       </div>
-
       <div class="blok__coffee">
         <div class="circle__img--coffee">
           <img class="picture__coffee " srcset="
-                          ./images/icecoffeeMTD132x132.jpg 1x
-                          ./images/icecoffeeMTD264x264@2x.jpg 2x
-                          " src="./images/icecoffeeMTD132x132.jpg" alt="ice coffee" sizes="132" />
+                              ./images/icecoffeeMTD132x132.jpg 1x
+                              ./images/icecoffeeMTD264x264@2x.jpg 2x
+                              " src="./images/icecoffeeMTD132x132.jpg" alt="ice coffee" sizes="132" />
         </div>
         <h3 class="picture__title">ice coffee</h3>
         <div class="picture__blok picture__blok--coffee"></div>
       </div>
-
       <div class="blok__milkshake">
         <div class="circle__img--milkshake">
           <img class="picture__milkshake " srcset="
-                              ./images/milkshakesMTD132x132.jpg 1x
-                              ./images/milkshakesMTD264x264@2x.jpg 2x
-                              " src="./images/milkshakesMTD132x132.jpg" alt="milkshake" sizes="132" />
+                                  ./images/milkshakesMTD132x132.jpg 1x
+                                  ./images/milkshakesMTD264x264@2x.jpg 2x
+                                  " src="./images/milkshakesMTD132x132.jpg" alt="milkshake" sizes="132" />
         </div>
         <h3 class="picture__title picture__title--milkshake">milkshake</h3>
         <div class="picture__blok picture__blok--milkshake"></div>
       </div>
     </div>
-
     <form class="form__product" autocomplete="on">
       <div class="form__group--product">
         <input class="form__field--product" type="text" pattern="[A-Za-z]{2,15}"
@@ -52,21 +51,19 @@
           id="user-name" />
         <label class="form__label--product" for="user-name"></label>
       </div>
-
       <div class="form__group--product">
         <input class="form__field--product" type="tel" placeholder="Phone" name="tel" id="tel" required
           pattern="[0-9]{5,10}" title="Number must be 5 - 10 digits" />
         <label class="form__label--product" for="tel"></label>
       </div>
-
       <div class="form__coment--product">
         <textarea class="form__textarea--product" placeholder="Comment" name="comment" rows="5"></textarea>
         <label class="form__textarea-label--product"></label>
       </div>
-
       <button class="btn__colored btn__colored--cream" type="submit">Submit</button>
-
     </form>
+
+
 
   </div>
 </div>

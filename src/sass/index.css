@@ -1230,48 +1230,117 @@ p {
   color: #131313;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 @media screen and (min-width: 480px) {
-  .contacts-section {
-    gap: 16px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-    max-height: 1487px;
-    background-color: rgb(132, 161, 120);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center top 320px;
+  .container {
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .contacts-section {
-    max-height: 625px;
-    background-position: center top 625px;
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-around;
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.visual-hiden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.contacts-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
   .contacts-section {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+}
+
+.cafe-set {
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .cafe-set {
+    gap: 16px;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cafe-set {
     gap: 32px;
-    padding-top: 40px;
-    padding-bottom: 40px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: baseline;
+  }
+}
+
+ul, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.cafe-set-item {
+  border: 2px Solid rgba(212, 20, 67, 0.1);
+  background-color: Solid #FCFCFC;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  text-decoration: none;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .cafe-set-item {
+    padding: 24px 40px;
+    flex-basis: calc((100% - 96px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cafe-set-item {
+    padding: 40px 40px;
+    flex-basis: calc((100% - 96px) / 3);
   }
 }
 
@@ -1281,58 +1350,6 @@ ul, li {
 }
 
 @media screen and (min-width: 480px) {
-  .contacts-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 280px;
-    height: 412px;
-    border: 2px Solid rgba(212, 20, 67, 0.1);
-    background-color: Solid #FCFCFC;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    background-color: rgb(252, 252, 252);
-    padding-top: 40px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .contacts-container {
-    display: flex;
-    flex-direction: column;
-    width: 224px;
-    height: 537px;
-    border: 2px Solid rgba(212, 20, 67, 0.1);
-    background-color: Solid #FCFCFC;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    padding: 40px 24px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .contacts-container {
-    display: flex;
-    flex-direction: column;
-    width: 368px;
-    height: 542px;
-    border: 2px Solid rgba(212, 20, 67, 0.1);
-    background-color: Solid #FCFCFC;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    padding: 40px 40px;
-  }
-}
-
-.contacts-item {
-  text-decoration: none;
-  list-style: none;
-}
-
-.contacts-name {
-  padding-bottom: 20px;
-}
-
-@media screen and (max-width: 480px) {
   .contacts-title {
     font-family: Montserrat;
     font-weight: 500;
@@ -1355,12 +1372,10 @@ ul, li {
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .contacts-title {
     font-size: 16px;
     line-height: 1.4;
-    /* or 22px */
-    letter-spacing: 0.04em;
     color: #131313;
     width: 73px;
     height: 30px;
@@ -1369,7 +1384,7 @@ ul, li {
     margin-bottom: 36px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .contacts-title {
     font-family: Montserrat;
     font-style: normal;
@@ -1387,7 +1402,7 @@ ul, li {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .contacts-title-foodtruck {
     font-family: Montserrat;
     font-weight: 500;
@@ -1410,7 +1425,7 @@ ul, li {
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .contacts-title-foodtruck {
     font-size: 16px;
     line-height: 1.4;
@@ -1423,7 +1438,7 @@ ul, li {
     margin-bottom: 36px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .contacts-title-foodtruck {
     font-family: Montserrat;
     font-style: normal;
@@ -1456,7 +1471,6 @@ ul, li {
 @media screen and (max-width: 768px) {
   .contacts-menu-town {
     font-family: Montserrat;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;

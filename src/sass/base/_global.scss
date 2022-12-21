@@ -108,9 +108,9 @@ a:active {
     font-style: normal;
     font-weight: 400;
 }
-.form__group {
-    position: relative;
-}
+// .form__group {
+//     position: relative;
+// }
 .form__field {
     display: block;
     width: 100%;
@@ -118,18 +118,31 @@ a:active {
     border: 1px solid var(--backgroundColor);
     border-radius: 10px;
 }
-.form__label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 140%;
-    color: var(--primaryColor);
-}
-.form__coment {
-    position: relative;
-}
+// .form__label {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     font-weight: 400;
+//     font-size: 12px;
+//     line-height: 140%;
+//     color: var(--primaryColor);
+// }
+// .form__coment {
+//     position: relative;
+// }
+
+// .form__textarea-label {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     padding-top: 11px;
+//     padding-left: 10.43px;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 140%;
+//     color: var(--primaryColor);
+// }
+
 .form__textarea {
     display: block;
     width: 100%;
@@ -137,49 +150,3 @@ a:active {
     border: 1px solid var(--backgroundColor);
     border-radius: 10px;
     resize: none;
-}
-.form__textarea-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 11px;
-    padding-left: 10.43px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
-    color: var(--primaryColor);
-}
-.body {
-    background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-     // mobail
-        background-image: url(../images/Backgroud_mobile885x1242.jpg);
-
-        @media screen and (min-device-pixel-ratio: 2),
-         screen and (min-resolution: 192dpi),
-         screen and (min-resolution: 2dppx) { 
-         background-image: url(../images/Backgroud_mobile1770x2484@2x.jpg);
-              
-     }
-    // tablet
-        @media screen and (min-width: 768px) {
-         background-image: url(../images/Background_tablet963x1017.jpg);
-        }
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url(../images/Background_tablet1926x2034@2x.jpg);
-        }
-        
-         //desctop
-        @media screen and (min-width: 1200px) {
-            background-image: url(../images/Backgroud_desktop1300x1350.jpg);
-         }
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url(../images/Backgroud_desktop2600x2700@2x.jpg);
-        }
-}

@@ -1,22 +1,24 @@
-.modal1,
-.modal2,
-.modal3,
-.modal4,
-.modal5,
-.modal7,
-.modal8 {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -48%);
-    z-index: 300;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid #F8D24E;
-    background: var(--extrabackgroundColor);
-    overflow: visible;
-    overflow-y: scroll;
-}
+// .modal1,
+// .modal2,
+// .modal3,
+// .modal4,
+// .modal5,
+// .modal7,
+// .modal8 {
+//     position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -48%);
+//     z-index: 300;
+//     text-align: center;
+//     border-radius: 10px;
+//     border: 2px solid #F8D24E;
+//     background: var(--extrabackgroundColor);
+//     overflow: visible;
+
+    
+    
+// }
 
 
 
@@ -35,6 +37,7 @@
     border: transparent;
     background-color: var(--extrabackgroundColor);
     cursor: pointer;
+    
 
     @media screen and (min-width: 768px) {
         right: 17.37px;

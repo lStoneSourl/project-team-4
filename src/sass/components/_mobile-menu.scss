@@ -1,0 +1,227 @@
+.mobile-menu {
+  position: relative;
+ overflow-x: hidden;
+}
+
+.menu-container {
+//  display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #84a178;
+    padding: 12px 28px 120px;
+    
+     height: 100vh;
+     width: 100vw;
+    
+     
+     transform: translateX(100%);
+     transition: all 2s var(--transitionTimingFunction);
+  
+
+     &.is-open {
+      display: block;
+      opacity: 1;
+      transform: translateX(0%);
+      transition: all 2s var(--transitionTimingFunction);
+
+
+     }
+
+     @media screen and (min-width: 768px) {
+        padding: 25px 28px;
+        background-color: #97AF8D;
+   }
+
+   @media screen and (min-width: 1200px) {
+    display: none;
+}
+}
+
+.menu-container__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-container__link {
+  animation-duration: 250ms;
+  animation-timing-function: var(--transitionTimingFunction);
+
+  &:hover,
+  &:focus {
+    outline: none;
+    fill: #FCFCFC;
+    animation-name: rotate;
+    
+  }
+}
+
+.icecream-logo {
+    @media screen and (min-width: 768px) {
+       scale: 1.2;
+   }
+}
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .menu {
+   height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+
+  }
+
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .menu__link {
+    text-decoration: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+
+    display: flex;
+    align-items: center;
+    color: #FCFCFC;   
+    transition: color var(--transitionDuration) var(--transitionTimingFunction);
+    
+    &:hover,
+    &:focus {
+      color: #000000;
+      outline: none;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: calc(59 / 48);
+   }
+
+  }
+  .menu__btn {
+    // display: flex;
+
+    position: relative;
+    width: 152px;
+    min-width: 152px;
+    min-height: 40px;
+    padding: 10px 33px;
+  
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    color: #000000;
+  
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  
+    background-color: var(--accentColor);
+  
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
+  
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  
+    &:hover,
+    &:focus {
+      background-color: var(--btn-hoverColor);
+    }
+    &:focus {
+      outline: none;
+      color: var(--extrabackgroundColor);
+  
+      background-color: var(--btn-hoverColor);
+  
+      &::after {
+        transition: all var(--transitionDuration) var(--transitionTimingFunction);
+        content: '—';
+        color: transparent;
+        background: url(../images/but/arrow-w.svg) no-repeat right center;
+      }
+    }
+    &:disabled {
+      outline: none;
+      color: var(--primaryColor);
+      border-color: var(--btn-disabledColor);
+      background-color: var(--btn-disabledColor);
+      cursor: initial;
+    }
+    &::after {
+      transition: all var(--transitionDuration) var(--transitionTimingFunction);
+      content: '—';
+      color: transparent;
+      background: url(../images/but/arrow-b.svg) no-repeat right center;
+      margin-left: 4px;
+    }
+ 
+    animation-duration: 250ms;
+    animation-timing-function: var(--transitionTimingFunction);
+  
+    &:hover,
+    &:focus {
+      
+      animation-name: rotate;
+    }
+ 
+    @media screen and (min-width: 768px) {
+         display: none;
+    }
+   }
+
+  .menu__closing-btn {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
+    
+    
+    &:hover,
+    &:focus {
+        outline: none;
+        & .menu__close {
+            fill: #000000;
+          
+        }  
+    }
+  }
+
+  .menu__close {
+    fill: #ffffff;
+    background-color: transparent;
+
+  }
+
+   // fun
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

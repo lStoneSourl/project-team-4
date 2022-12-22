@@ -57,44 +57,6 @@ background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0 ) 30%, #84A178 30
 }
 }
 
-  
-  .contacts-overley  {
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(../images/Backgroud_mobile885x1242.jpg);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 100% 28%;
-  
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/Backgroud_mobile1770x2484@2x.jpg);
-    }
-  
-    @media screen and (min-width: 768px) {
-      background-size: 100% 50%;
-      background-image: url(../images/Background_tablet963x1017.jpg);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/Background_tablet1926x2034@2x.jpg);
-      }
-    }
-  
-    @media screen and (min-width: 1200px) {
-      background-size: 100% 27%;
-      background-image: url(../images/Backgroud_desktop1300x1350.jpg);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/Backgroud_desktop2600x2700@2x.jpg);
-      }
-    }
-  }
-  
-
 .cafe-set{
    
    justify-content: center;
@@ -102,7 +64,7 @@ background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0 ) 30%, #84A178 30
    flex-wrap: wrap;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   align-items: center;
  
    @media screen and  (min-width: 768px)  {   
     gap: 16px;
@@ -128,8 +90,7 @@ background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0 ) 30%, #84A178 30
   text-decoration: none;
   list-style: none;
 }
-.cafe-set-item
-{
+.cafe-set-item {
      border: 2px Solid rgba(212, 20, 67, 0.1);
      background-color: Solid #FCFCFC; 
       box-shadow: 0px 8px 30px
@@ -139,8 +100,7 @@ background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0 ) 30%, #84A178 30
       padding-bottom: 24px;
       padding-left: 32px; 
       padding-right: 32px; 
-      // text-decoration: none;
-      // list-style: none;
+      max-width: 280px;
       background-color: #FFFFFF;
       
   @media screen and  (min-width: 768px)  { 
@@ -333,15 +293,14 @@ letter-spacing: 0.04em;
 
 color: #D6936D;
 max-height: 71px;
-// max-width: 173px;
 padding-bottom: 32px;
 }
 @media screen and  (min-width: 1200px)  {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 183%;
+  font-size: 16px;
+  line-height: 1.87;
   /* or 26px */
   
   letter-spacing: 0.04em;

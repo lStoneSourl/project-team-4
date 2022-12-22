@@ -113,6 +113,7 @@ flex-basis:calc((100% - 96px )/ 3);
   padding: 40px 40px;
   // width: calc(100% - 96px / 3);
   flex-basis:calc((100% - 96px) / 3);
+  min-width: 368px;
 }
 }
 
@@ -307,7 +308,10 @@ padding-bottom: 32px;
   
   color: #D6936D;
   
-  
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 }
 

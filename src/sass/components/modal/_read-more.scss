@@ -1,3 +1,26 @@
+ backdrop5 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 250;
+    opacity: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    transition: all 1.5s ease 0s;
+}
+.backdrop5.is-hidden5 {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition: all 1.5s;
+    transform: rotate(360deg);
+}
+
 .modal5 {
     padding: 28px;
     border-radius: 10px;
@@ -12,6 +35,7 @@
     @media screen and (min-width: 768px) {
         padding: 32px 60px;
     }
+       
 
 }
 

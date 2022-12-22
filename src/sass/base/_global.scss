@@ -130,6 +130,18 @@ a:active {
 .form__coment {
     position: relative;
 }
+.form__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: var(--primaryColor);
+}
+.form__coment {
+    position: relative;
+}
 .form__textarea {
     display: block;
     width: 100%;
@@ -137,6 +149,17 @@ a:active {
     border: 1px solid var(--backgroundColor);
     border-radius: 10px;
     resize: none;
+}
+.form__textarea-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 11px;
+    padding-left: 10.43px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--primaryColor);
 }
 .form__textarea-label {
     position: absolute;

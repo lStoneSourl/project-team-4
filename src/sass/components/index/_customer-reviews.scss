@@ -61,21 +61,31 @@
         width: 84px;
         height: 84px;
         border-radius: 50%;
+        margin: 0 auto 32px;
         background-color: var(--extrabackgroundColor);
     }
 }
 .reviews__smail {
+    align-items: center;
     border-radius: 50%;
+}
+.rewiews__item {
+    margin: 0 auto 32px;
 }
 .reviews__one {
     position: relative;
 
-    margin-bottom: 32px;
-    margin-top: 32px;
-    width: 280px;
-    height: 256px;
     background-color: var(--backgroundColor);
     border-radius: 10px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 32px;
+        margin-top: 32px;
+        width: 280px;
+        height: 256px;
+        
+    }
+   
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
@@ -130,13 +140,13 @@
     }
     @media screen and (min-width: 1200px) {
         padding: 43px 109px;
+        
 
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 186%;
-/* or 30px */
 
         text-align: center;
         letter-spacing: 0.04em;
@@ -145,7 +155,6 @@
     
 }
 .reviews__title {
-    margin-bottom: 35px;
     
 
     font-family: 'Montserrat';
@@ -171,16 +180,18 @@
     position: absolute;
     overflow: hidden;
 }
-.swiper .swiper-pagination-bullet-active {
-    background-color: var(--backgroundColor);
-    width: 10px;
-    height: 10px;
-}
-.swiper-slide {
+.true-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
 }
+.slick-dots li.slick-active button:before {
+    background-color: brown;
+}
+.slick-dots {
+    margin-top: 32px;
+}
+
+
 
 

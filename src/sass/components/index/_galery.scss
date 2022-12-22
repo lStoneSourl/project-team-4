@@ -53,7 +53,6 @@
     @media screen and (min-width: 1200px) {
         
         
-        width: 1013px;
         height: 422px;
         border-radius: 26px;
     }
@@ -67,7 +66,7 @@
     object-fit: cover;
 }
 .swiper {
-    width: 100%;
+    max-width: 1013px;
     height: 100%;
 }
 .visually-hidden {
@@ -83,3 +82,5 @@
     position: absolute;
     overflow: hidden;
 }
+
+

@@ -18,6 +18,8 @@
   padding-right: 16px;
   }
 }
+
+
 .visual-hiden { position: absolute; white-space: nowrap; width: 1px; height: 1px; overflow: hidden; border: 0; padding: 0; clip: rect(0 0 0 0); clip-path: inset(50%); margin: -1px; }
 
 .contacts-section {
@@ -287,7 +289,7 @@ letter-spacing: 0.04em;
 color: #D6936D;
 
 max-height: 40px;
-// max-width: 190px;
+ max-width: 190px;
 padding-bottom: 24px;
 @media screen and  (min-width: 768px)  {
 font-family: Montserrat;
@@ -299,7 +301,7 @@ letter-spacing: 0.04em;
 
 color: #D6936D;
 max-height: 71px;
-// max-width: 173px;
+ max-width: 173px;
 padding-bottom: 32px;
 }
 @media screen and  (min-width: 1200px)  {
@@ -569,8 +571,10 @@ color: #131313;
         margin-top: 40px;
         justify-content: center;
     }
+  @media screen and (min-width: 1200px) {
+    margin-top: 60px;
+  }
 }
-
 
 
 

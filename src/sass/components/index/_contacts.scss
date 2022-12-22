@@ -18,27 +18,41 @@
   padding-right: 16px;
   }
 }
-.visual-hiden { position: absolute; white-space: nowrap; width: 1px; height: 1px; overflow: hidden; border: 0; padding: 0; clip: rect(0 0 0 0); clip-path: inset(50%); margin: -1px; }
+.visual-hiden { 
+  position: absolute; 
+  white-space: nowrap; 
+  width: 1px; 
+  height: 1px; 
+  overflow: hidden; 
+  border: 0; 
+  padding: 0; 
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%); 
+  margin: -1px; }
 
 .contacts-section {
-background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: #84a178;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0 ) 25%, #84A178 25%, #84A178 100%);
+
+
     
 @media screen and  (min-width: 768px)  { 
   padding-top: 80px;
   padding-bottom: 40px;
   // до кнопки
- 
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0 ) 52%, #84A178 52%, #84A178 100%);
+
 }
 @media screen and  (min-width: 1200px)  { 
   padding-top: 100px;
   padding-bottom: 60px;
 // до кнопки
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0 ) 30%, #84A178 30%, #84A178 100%);
 
 }
 }

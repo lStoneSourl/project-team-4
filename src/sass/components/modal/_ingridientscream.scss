@@ -1,5 +1,32 @@
+.backdrop3 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 250;
+  opacity: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 1s ease 0s;
+
+}
+
+.backdrop3.is-hidden3 {
+  transition: all 1s ease 0s;
+  transform: perspective(600px) translate(-100%, 0px) rotatey(-45deg);
+}
+
 .modal3 {
+  position: relative;
+  width: 88%;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -48%);
   padding: 28px 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   @media screen and (min-width: 480px) {
     max-width: 568px;
@@ -8,6 +35,7 @@
   @media screen and (min-width: 768px) {
     padding: 32px 40px;
     width: 568px;
+    top: 85%;
   }
 }
 

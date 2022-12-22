@@ -44,12 +44,7 @@
         }
 }
 
-.swiper-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-}
+
 .reviews__img {
     display: flex;
     align-items: center;
@@ -181,4 +176,11 @@
     width: 10px;
     height: 10px;
 }
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
 

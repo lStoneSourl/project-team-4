@@ -165,7 +165,7 @@
     
 }
 .reviews__title {
-    
+    padding-bottom: 40px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -210,7 +210,13 @@
 .slick-dots {
     bottom: 5px;
 }
-
+#tools {
+    color: var(--backgroundColor);
+    bottom: 60px;
+}
+.slider .slick-dots li {
+    margin: o 20px;
+}
 
 
 

@@ -1,3 +1,4 @@
+
 .modal1,
 .modal2,
 .modal3,
@@ -5,20 +6,25 @@
 .modal5,
 .modal7,
 .modal8 {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -48%);
+    width: 88%;
     z-index: 300;
     text-align: center;
     border-radius: 10px;
     border: 2px solid #F8D24E;
     background: var(--extrabackgroundColor);
     overflow: visible;
-    overflow-y: scroll;
 }
-
-
+.backdrop1.is-hidden1,
+.backdrop2.is-hidden2,
+.backdrop3.is-hidden3,
+.backdrop4.is-hidden4,
+.backdrop5.is-hidden5,
+.backdrop7.is-hidden7,
+.backdrop8.is-hidden8 {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
 
 .modal__button--close1,
 .modal__button--close2,

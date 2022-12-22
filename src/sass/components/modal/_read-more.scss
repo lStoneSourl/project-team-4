@@ -1,4 +1,4 @@
- backdrop5 {
+.backdrop5 {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -6,27 +6,25 @@
     left: 0;
     z-index: 250;
     opacity: 1;
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
     background-color: rgba(0, 0, 0, 0.1);
-
     transition: all 1.5s ease 0s;
 }
-.backdrop5.is-hidden5 {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
 
+.backdrop5.is-hidden5 {
     transition: all 1.5s;
     transform: rotate(360deg);
 }
 
 .modal5 {
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -48%);
     padding: 28px;
-    border-radius: 10px;
-    border: 2px solid #F8D24E;
-    background: var(--extrabackgroundColor);
-    overflow: visible;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
     @media screen and (min-width: 480px) {
         max-width: 568px;
@@ -34,6 +32,7 @@
 
     @media screen and (min-width: 768px) {
         padding: 32px 60px;
+        top: 80%;
     }
        
 

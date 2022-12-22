@@ -1,21 +1,32 @@
-<header class="header">
+<header class="header" id="home">
     <div class="header_container">
-        <a class="header_logo" href="#">
-            <img src="./images/logo_M40x38.png" alt="ice-cream_logo">
+        <a class="header_logo" href="./">
+            <img srcset="
+                ./images/logo_M40x38.png 40w,
+                ./images/Logo_T48x45.png 48w,
+                ./images/LogoD60x65.png 60w,
+                ./images/logo_M80x76@2x.png 80w,
+                ./images/Logo_T496x90@2x.png 96w,
+                ./images/LogoD120x130@2x.png 120w
+                " sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (max-width: 768px) 40px, 100vw"
+                src="./images/logo_M40x38.png" alt="ice-cream_logo">
         </a>
         <nav class="main-navigation">
             <ul class="main-navigation_list">
-                <li><a class="main-navigation_link" href="#">Home</a></li>
-                <li><a class="main-navigation_link" href="#">How it's made</a></li>
-                <li><a class="main-navigation_link" href="#">Our products</a></li>
-                <li><a class="main-navigation_link" href="#">Contacts</a></li>
+                <li><a class="main-navigation_link" href="#home">Home</a></li>
+                <li><a class="main-navigation_link" href="#how-its-made">How it's made</a></li>
+                <li><a class="main-navigation_link" href="#products">Our products</a></li>
+                <li><a class="main-navigation_link" href="#contact">Contacts</a></li>
             </ul>
         </nav>
-        <button type="button" class="header_menu-button">
-            <svg width="32" height="32">
-                <use href="./images/symbol-defs.svg#icon-eva_menu-fill-32x32"></use>
-            </svg>
-        </button>
-        <button type="button" class="header_order-button">Buy now</button>
+        <div class="header_button-container">
+            <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-button_icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-eva_menu-fill-32x32"></use>
+                </svg>
+            </button>
+            <button type="button" data-modal1-open1 class="btn__hidden btn__buy js-open-modal2" data-modal="2">Buy
+                now</button>
+        </div>
     </div>
 </header>

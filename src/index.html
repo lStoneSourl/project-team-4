@@ -1,52 +1,91 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-  </head>
-  <body>
-    <!-- Header -->
-    <include src="./partials/header.html"></include>
-    <main>
-      <!-- Hero section -->
-      <include src="./partials/main/hero-section.html"></include>
-      <!-- Products -->
-      <include src="./partials/main/products.html"></include>
-      <!-- About -->
-      <include src="./partials/main/about.html"></include>
-      <!-- Advantages -->
-      <include src="./partials/main/advantages.html"></include>
-      <!-- Gallery -->
-      <include src="./partials/main/gallery.html"></include>
-      <!-- Customer Reviews -->
-      <include src="./partials/main/customer-reviews.html"></include>
-      <!-- Contacts -->
-      <include src="./partials/main/contacts.html"></include>
-    </main>
-    <!-- Footer -->
-    <include src="./partials/footer.html"></include>
-    <!-- ingridients -->
-    <include src="./partials/modal/ingridients.html"></include>
-    <!-- Product Card -->
-    <include src="./partials/modal/product-card.html"></include>
-    <!-- Read More -->
-    <include src="./partials/modal/read-more.html"></include>
-    <!-- Our Location -->
-    <include src="./partials/modal/our-location.html"></include>
-    <!-- Franchise -->
-    <include src="./partials/modal/franchise.html"></include>
-    <!-- Mobile Menu -->
-    <include src="./partials/mobile-menu.html"></include>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="module" src="./index.js"></script>
-    <script src="./js/swiper.js"></script>
-    <script src="./js/modal.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page title</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page title</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body">
+  <!-- Header -->
+  <include src="./partials/header.html"></include>
+  <main>
+    <!-- Hero section -->
+    <include src="./partials/main/hero-section.html"></include>
+    <!-- Products -->
+    <include src="./partials/main/products.html"></include>
+    <!-- About -->
+    <include src="./partials/main/about.html"></include>
+    <!-- Advantages -->
+    <include src="./partials/main/advantages.html"></include>
+    <!-- Gallery -->
+    <include src="./partials/main/gallery.html"></include>
+    <!-- Customer Reviews -->
+    <include src="./partials/main/customer-reviews.html"></include>
+    <!-- Contacts -->
+    <!-- <include src="./partials/main/contacts.html"></include> -->
+  </main>
+  <!-- Footer -->
+  <include src="./partials/footer.html"></include>
+  <!-- ingridients -->
+  <include src="./partials/modal/ingridientscream.html"></include>
+  <include src="./partials/modal/ingridientscoffee.html"></include>
+  <include src="./partials/modal/ingridientsmilkshake.html"></include>
+  <!-- Product Card -->
+  <include src="./partials/modal/product-cardcream.html"></include>
+  <!-- Read More -->
+  <include src="./partials/modal/read-more.html"></include>
+  <!-- Our Location -->
+  <include src="./partials/modal/our-location.html"></include>
+  <!-- Franchise -->
+  <include src="./partials/modal/franchise.html"></include>
+  <!-- Mobile Menu -->
+  <include src="./partials/mobile-menu.html"></include>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module" src="./index.js"></script>
+  <script src="./js/franchise.js"></script>
+  <script src="./js/ingridients.js"></script>
+  <script src="./js/our-location.js"></script>
+  <script src="./js/product-card.js"></script>
+  <script src="./js/read-more.js"></script>
+  <script src="./js/swiper.js"></script>
+  <script src="./js/mySwiper.js"></script>
+  <script src="./js/ingridients1.js"></script>
+  <script src="./js/ingridients2.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
   </body>
+
 </html>

@@ -1,0 +1,73 @@
+.modal5 {
+    padding: 28px;
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    background: var(--extrabackgroundColor);
+    overflow: visible;
+
+    @media screen and (min-width: 480px) {
+        max-width: 568px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 32px 60px;
+    }
+
+}
+
+.videos {
+    width: 100%;
+}
+
+.videos__wrapper {
+    position: relative;
+    max-width: 932px;
+    margin: 0 auto;
+
+}
+
+.videos__item {
+    padding-top: 56.25%;
+}
+
+.video__element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.recipe {
+    margin-top: 20px;
+    background: linear-gradient(90deg, #00d5ff74 0%, #92fed576 100%);
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+.recipe__title {
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.recipe__list {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.recipe__ingredients {
+    margin-bottom: 10px;
+    text-align: start;
+    font-size: 20px;
+    line-height: 110%;
+    color: var(--primaryColor);
+    list-style-type: decimal
+}
+
+.recipe__ingredients:last-child {
+    margin-bottom: 0;
+}

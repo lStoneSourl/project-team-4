@@ -1,0 +1,60 @@
+.modal1,
+.modal2,
+.modal3,
+.modal4,
+.modal5,
+.modal7,
+.modal8 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -48%);
+    z-index: 300;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    background: var(--extrabackgroundColor);
+    overflow: visible;
+    overflow-y: scroll;
+}
+
+
+
+.modal__button--close1,
+.modal__button--close2,
+.modal__button--close3,
+.modal__button--close4,
+.modal__button--close5,
+.modal__button--close7,
+.modal__button--close8 {
+    position: absolute;
+    right: 16.48px;
+    top: 16.44px;
+    width: 11.11px;
+    height: 11.06px;
+    border: transparent;
+    background-color: var(--extrabackgroundColor);
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        right: 17.37px;
+        top: 17.33px;
+    }
+
+}
+
+.modal__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+        line-height: calc(28 / 20);
+    }
+
+}

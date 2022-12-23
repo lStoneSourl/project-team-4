@@ -201,40 +201,6 @@
     bottom: 5%;
     right: 0;
     background-color: #84A178;
-    background-image: url(../images/icecoffeeMT200x200.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/icecoffeeMT400x400@2x.jpg);
-    }
-    @media screen and (min-width: 768px) {
-    background-image:
-        url(../images/icecoffeeMTD132x132.jpg);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/icecoffeeMTD264x264@2x.jpg);
-    }
-    }
-    @media screen and (min-width: 1200px) {
-    background-image: 
-        url(../images/icecoffeeD302x302.jpg);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/icecoffeeD604x604@2x.jpg);
-    }
-    width: 302px;
-    height: 302px;
-}
-}
-.list-products__image--two::before {
-    content: '';
-    position: absolute;
-    background-color: #131313;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    bottom: 5%;
-    right: 0;
-    background-color: #84A178;
     background-image: url(../images/icecreamMT200x200.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -258,6 +224,41 @@
     width: 302px;
     height: 302px;
 }
+}
+.list-products__image--two::before {
+    content: '';
+    position: absolute;
+    background-color: #131313;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    bottom: 5%;
+    right: 0;
+    background-color: #84A178;
+    background-image: url(../images/icecoffeeMT200x200.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/icecoffeeMT400x400@2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+    background-image:
+        url(../images/icecoffeeMTD132x132.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/icecoffeeMTD264x264@2x.jpg);
+    }
+    }
+    @media screen and (min-width: 1200px) {
+    background-image: 
+        url(../images/icecoffeeD302x302.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/icecoffeeD604x604@2x.jpg);
+    }
+    width: 302px;
+    height: 302px;
+}
+
 }
 .list-products__image--three::before {
     content: '';

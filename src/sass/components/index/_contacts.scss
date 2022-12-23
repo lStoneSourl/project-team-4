@@ -104,8 +104,9 @@ background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0 ) 30%, #84A178 30
       background-color: #FFFFFF;
       
   @media screen and  (min-width: 768px)  { 
-padding: 40px 24px;
-flex-basis:calc((100% - 96px )/ 3);
+  padding: 40px 24px;
+  flex-basis:calc((100% - 96px )/ 3);
+  min-width: 224px
 
 }
 

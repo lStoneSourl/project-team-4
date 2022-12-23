@@ -75,11 +75,16 @@
     margin: 0 auto 32px;
 }
 #test {
-    @media screen and (max-width: 768px) {
+    @media screen and  (max-width: 330px) {
         min-height: 256px;
-        
     }
-    
+    @media screen and (min-width: 330px) and (max-width: 412px) {
+        min-height: 223px;
+    }
+    @media screen and (min-width: 412px) and (max-width: 767px) {
+        min-height: 192px;
+    }
+
 }
 .reviews__one {
     position: relative;
@@ -88,10 +93,9 @@
     border-radius: 10px;
 
     @media screen and (max-width: 767px) {
-        // margin-bottom: 32px;
-        // margin-top: 32px;
-        margin: 32px 80px;
-        max-width: 280px;
+        margin-bottom: 32px;
+        margin-top: 32px;
+        
     }
    
 
@@ -208,14 +212,19 @@
 .slick-dots {
     bottom: 5px;
 }
-#tools {
-    color: var(--backgroundColor);
-    bottom: 60px;
-}
-.slider .slick-dots li {
-    margin: o 20px;
-}
 
+.slider .slick-dots li {
+    margin: 0 20px;
+}
+.slick-dots li.slick-active button:before {
+    color: var(--backgroundColor);
+    width: 20px;
+    height: 20px;
+}
+.slick-dots li button {
+    width: 20px;
+    height: 20px;
+}
 
 
 

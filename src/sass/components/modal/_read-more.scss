@@ -19,7 +19,7 @@
 
 .modal5 {
     position: relative;
-    top: 100%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -48%);
     padding: 28px;
@@ -28,11 +28,16 @@
 
     @media screen and (min-width: 480px) {
         max-width: 568px;
+        top: 80%;
     }
 
     @media screen and (min-width: 768px) {
         padding: 32px 60px;
-        top: 80%;
+        top: 75%;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 32px 60px;
+        top: 65%;
     }
        
 

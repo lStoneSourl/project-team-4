@@ -5,7 +5,8 @@
 .modal4,
 .modal5,
 .modal7,
-.modal8 {
+.modal8,
+.modal9 {
     width: 88%;
     z-index: 300;
     text-align: center;
@@ -20,7 +21,8 @@
 .backdrop4.is-hidden4,
 .backdrop5.is-hidden5,
 .backdrop7.is-hidden7,
-.backdrop8.is-hidden8 {
+.backdrop8.is-hidden8,
+.backdrop9.is-hidden9 {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -32,7 +34,8 @@
 .modal__button--close4,
 .modal__button--close5,
 .modal__button--close7,
-.modal__button--close8 {
+.modal__button--close8,
+.modal__button--close9 {
     position: absolute;
     right: 16.48px;
     top: 16.44px;

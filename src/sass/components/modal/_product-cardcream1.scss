@@ -14,18 +14,18 @@
 }
 
 .backdrop9.is-hidden9 {
-    transition: all 1s ease 0s;
-    transform: perspective(600px) translate(0px, -100%) rotatey(45deg);
+    transition: all 0.5s ease 0s;
+    // transform: perspective(300px) translate(0px, -100%);
 }
 
 .modal9 {
     position: relative;
     width: 88%;
-    top: 100%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -48%);
     padding: 28px;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 
     @media screen and (min-width: 480px) {

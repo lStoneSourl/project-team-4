@@ -88,12 +88,10 @@
     border-radius: 10px;
 
     @media screen and (max-width: 767px) {
-        margin-bottom: 32px;
-        margin-top: 32px;
-        width: 280px;
-       
-        
-        
+        // margin-bottom: 32px;
+        // margin-top: 32px;
+        margin: 32px 80px;
+        max-width: 280px;
     }
    
 

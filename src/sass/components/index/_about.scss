@@ -172,7 +172,7 @@
   }
 }
 
-.about-list__item:not(:last-child) {
+.about-list__item:first-child {
   margin-bottom: 4px;
 
   @media screen and (min-width: 768px) {
@@ -188,8 +188,9 @@
 //   padding: 10px 20px;
 
 .btn__read {
-  margin-top: 10px;
+  
   margin: 0 auto;
+  margin-top: 10px;
 
   @media screen and(min-width: 768px) {
     margin-top: 32px;

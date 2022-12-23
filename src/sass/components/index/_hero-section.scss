@@ -176,7 +176,12 @@
     height: 16px;
     fill: var(--textColor);
     margin-top: 12px;
-
+    transform: scale(1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        transform: scale(1.25);
+    }
     @media screen and (min-width: 1200px) {
         margin-top: 24px;
     }
